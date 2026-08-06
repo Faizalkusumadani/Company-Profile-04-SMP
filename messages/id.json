@@ -1,0 +1,527 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang Kami",
+    "profile": "Profil Perusahaan",
+    "profile_desc": "Sejarah dan latar belakang perusahaan kami",
+    "vision-mision": "Visi & Misi",
+    "vision-mision_desc": "Arah dan tujuan jangka panjang kami",
+    "value": "Nilai-Nilai",
+    "value_desc": "Prinsip yang kami pegang dalam bekerja",
+    "management": "Manajemen",
+    "management_desc": "Tim di balik kepemimpinan perusahaan",
+    "achievement": "Pencapaian",
+    "achievement_desc": "Penghargaan dan pencapaian perusahaan",
+    "logistics": "Logistik",
+    "logistics_desc": "Jaringan distribusi dan dukungan pengiriman",
+    "product": "Produk",
+    "news": "Ruang Informasi",
+    "news_company": "Berita",
+    "news_company_desc": "Berita terbaru seputar perusahaan",
+    "activity_company": "Kegiatan",
+    "activity_company_desc": "Dokumentasi kegiatan dan event perusahaan",
+    "career": "Karir",
+    "contact": "Hubungi Kami"
+  },
+  "stat": {
+    "label_01": "Brand Ternama",
+    "label_02": "Klien Bisnis",
+    "label_03": "Divisi Bisnis",
+    "label_04": "Berdiri Sejak"
+  },
+  "Carousel": {
+    "ariaLabel": "Sorotan perusahaan",
+    "selectSlide": "Pilih slide",
+    "prevSlide": "Slide sebelumnya",
+    "nextSlide": "Slide berikutnya",
+    "slideLabel": "Slide {number}: {title}",
+    "slides": {
+      "1": {
+        "eyebrow": "Sejak 2014",
+        "title": "Sinergi Mandiri Perkasa",
+        "subtitle": "Membangun masa depan dengan kualitas dan kepercayaan."
+      },
+      "2": {
+        "eyebrow": "Produk Unggulan",
+        "title": "Kualitas Standar Industri",
+        "subtitle": "Bahan bangunan pilihan dengan kualitas terjamin dan standar industri terbaik.",
+        "ctaLabel": "Lihat Produk"
+      },
+      "3": {
+        "eyebrow": "Layanan Kami",
+        "title": "Solusi Material Konstruksi Modern",
+        "subtitle": "Teknologi terkini dan layanan profesional untuk setiap kebutuhan proyek Anda.",
+        "ctaLabel": "Hubungi Kami"
+      },
+      "4": {
+        "eyebrow": "Jaringan Distribusi",
+        "title": "Layanan Delivery Tepat Waktu",
+        "subtitle": "Ketersediaan stok dan pengiriman efisien — material tiba tepat waktu di lokasi."
+      },
+      "5": {
+        "eyebrow": "Komitmen Kami",
+        "title": "Bertumbuh Bersama Mitra & Pelanggan",
+        "subtitle": "Kepercayaan Anda adalah prioritas utama kami."
+      }
+    }
+  },
+
+  "home_about": {
+    "title": "Distributor Resmi",
+    "overview": {
+      "desc": [
+        "PT Sinergi Mandiri Perkasa hadir sebagai distributor bahan bangunan terpercaya yang berfokus pada penyediaan produk-produk berkualitas tinggi untuk kebutuhan proyek. Didukung oleh merek ternama seperti Semen Merah Putih, Mortindo, Drymix, Bata Ringan Ziegel, Pipa Wavin dan Apar Servvo, kami berkomitmen memberikan solusi tepat, efisien, serta layanan profesional untuk setiap mitra bisnis.",
+        "\"Kepercayaan Anda adalah Prioritas Kami\""
+      ]
+    },
+    "desc_smp": "<p>PT Sinergi Mandiri Perkasa merupakan perusahaan distribusi dengan dua lini bisnis utama, yaitu <orange> Bahan Bangunan dan FMCG Produk.</orange> Kami menghadirkan produk berkualitas melalui layanan distribusi yang profesional dan terpercaya.</p>",
+    "cta": "Lihat detail"
+  },
+  "home_features": {
+    "tag": "Keunggulan Kompetitif",
+    "header_01": "Sinergi Mandiri Perkasa",
+    "desc": "Mengapa Memilih kami ",
+    "products": {
+      "title": "Produk Berkualitas & Terpercaya",
+      "desc": "Kami menghadirkan berbagai produk unggulan dari merek ternama seperti Semen Merah Putih, Mortindo, Drymix, Bata Ringan Ziegel, Pipa Wavin dan Apar Servvo, yang telah teruji kualitasnya di berbagai proyek"
+    },
+    "warehouse": {
+      "title": "Infrastruktur Strategis",
+      "desc": "Jaringan gudang dan pusat distribusi yang berlokasi strategis, memungkinkan respon cepat dan efisiensi supply chain secara maksimal"
+    },
+    "focus": {
+      "title": "Fokus pada Kebutuhan Proyek",
+      "desc": "Sebagai distributor khusus proyek, kami memahami standar dan spesifikasi yang dibutuhkan. Setiap produk yang kami sediakan telah sesuai dengan persyaratan teknis dan siap mendukung kelancaran pembangunan"
+    },
+    "experience": {
+      "title": "Berpengalaman Sejak 2014",
+      "desc": "Lebih dari satu dekade pengalaman dalam menangani berbagai proyek dengan tingkat kepuasan pelayanan yang tinggi"
+    },
+    "team": {
+      "title": "Layanan Profesional & Responsif",
+      "desc": "Didukung oleh tim berpengalaman, kami siap memberikan solusi, rekomendasi, dan layanan terbaik sesuai kebutuhan mitra bisnis"
+    },
+    "delivery": {
+      "title": "Layanan Delivery Tepat Waktu",
+      "desc": "Kami memastikan ketersediaan stok dan pengiriman yang efisien sehingga material selalu tiba tepat waktu di lokasi proyek"
+    }
+  },
+  "home_product": {
+    "tag": "Kategori Produk",
+    "header": "Solusi Lengkap Industri & Konstruksi",
+    "desc": "Menyediakan material konstruksi premium dari merek nasional tepercaya, dengan kualitas yang telah terbukti melalui berbagai proyek.",
+    "cta": "Lihat semua produk",
+    "category_00": {
+      "title": "semua"
+    },
+    "category_01": {
+      "title": "Bahan Bangunan",
+      "desc": "Solusi material struktural dan arsitektural berkualitas tinggi untuk fondasi proyek yang kokoh dan tahan lama"
+    },
+    "category_02": {
+      "title": "Sanitari",
+      "desc": "Perlengkapan sanitari modern berskala industri dengan standar kebersihan dan durabilitas maksimal"
+    },
+    "category_03": {
+      "title": "K3",
+      "desc": "Peralatan keselamatan kerja (K3) berstandar internasional untuk proteksi menyeluruh di area proyek."
+    },
+    "header_brandmarquee": "Dipercaya oleh brand terkemuka"
+  },
+  "home_FAQ": {
+    "tag": "Bantuan & FAQ",
+    "header_01": "Pertanyaan Seputar",
+    "header_02": " Layanan Kami",
+    "desc": "Temukan jawaban atas pertanyaan yang paling sering diajukan oleh mitra dan klien kami terkait pengadaan, kualitas, dan operasional.",
+    "cta": "Hubungi Kami",
+    "items": {
+      "bulk_order": {
+        "q": "Apakah Sinergi melayani pengiriman skala besar (bulk order) ?",
+        "a": "Ya, kami memiliki armada dan manajemen logistik yang siap melayani pengiriman skala besar untuk kebutuhan proyek industri dan komersial di berbagai wilayah."
+      },
+      "quality_standard": {
+        "q": "Bagaimana standar kualitas produk yang disediakan?",
+        "a": "Seluruh produk kami telah melewati proses Quality Control (QC) yang ketat dan memenuhi standar industri (SNI maupun Internasional) untuk menjamin keamanan proyek Anda."
+      },
+      "custom_product": {
+        "q": "Apakah memungkinkan untuk melakukan permintaan produk custom/spesifik?",
+        "a": "Tentu. Kami melayani pengadaan produk spesifik sesuai dengan Rencana Anggaran Biaya (RAB) dan spesifikasi teknis proyek Anda. Silakan hubungi tim engineer kami."
+      },
+      "payment_b2b": {
+        "q": "Bagaimana sistem pembayaran untuk mitra B2B (Business to Business)?",
+        "a": "Kami menyediakan fleksibilitas pembayaran (Term of Payment) bagi mitra B2B yang telah terverifikasi. Syarat dan ketentuan berlaku sesuai kesepakatan kontrak tertulis."
+      }
+    }
+  },
+  "about": {
+    "tag_company": "IKHTISAR KORPORASI",
+    "header_01": "Pilar Andal dalam",
+    "header_02": "Trading & Distribusi",
+    "header_03": "  Nasional",
+    "ihktisar": [
+      "PT Sinergi Mandiri Perkasa adalah perusahaan yang bergerak di bidang penjualan dan distribusi bahan bangunan berkualitas tinggi sejak tahun 2014. Perusahaan ini berkomitmen untuk menyediakan solusi optimal untuk kebutuhan proyek konstruksi di berbagai sektor, termasuk perumahan, pergudangan, perhotelan, perkantoran, industri, kesehatan, dan fasilitas pendidikan, antara lain.",
+      "Dengan fokus utama pada penyediaan bahan bangunan seperti Semen Merah Putih, Mortindo, Drymix, Bata Ringan Ziegel, Pipa Wavin dan Apar Servvo, kami siap mendukung para Pengembang (Developer) dan Kontraktor dalam mewujudkan pembangunan proyek konstruksinya."
+    ],
+    "tag_struktural": "Struktur Portofolio & Komoditas Utama",
+    "tag_sektor": "Kategori Sektor",
+    "desc_lini": "Lini Utama",
+    "tag_jaringan": "Jejaring Distribusi",
+    "desc_jaringan": "Mitra & Proyek",
+    "notif": "*Data jangkauan logistik terintegrasi mencakup wilayah strategis di Indonesia",
+    "header_building": "Distribusi Bahan bangunan",
+    "desc_building": "Penyediaan dan distribusi material struktural maupun arsitektural berskala industri untuk pemenuhan kebutuhan proyek infrastruktur, kontraktor, dan jaringan ritel konstruksi.",
+    "header_fmcg": "Distribusi FMCG",
+    "desc_fmcg": "Manajemen distribusi dan pasokan kebutuhan Air Minum Dalam Kemasan higienis berstandar mutu tinggi untuk segmen korporasi, ritel, dan pasar FMCG.",
+    "header_supplay": "Manajemen Rantai Pasok Terintegrasi",
+    "desc_supplay": "Pengelolaan pergudangan modern, akurasi pelacakan inventaris, serta jaringan transportasi logistik yang terintegrasi demi menjamin ketepatan waktu distribusi.",
+    "tag_office": "INFRASTRUKTUR",
+    "header_office": "Kantor",
+    "desc_office": "Pusat operasional utama dan koordinasi logistik yang dirancang strategis guna memfasilitasi kelancaran arus perdagangan antar wilayah.",
+    "image-header": "Kantor Pusat",
+    "office_reception": "Lobi Utama & Resepsionis",
+    "office_front": "Halaman Utama",
+    "office_meeting": "Ruang Rapat Eksekutif & Kemitraan",
+    "office_floor2": "Fasilitas Operasional & Ruang Kerja Tim"
+  },
+  "product": {
+    "category_00": {
+      "title": "semua"
+    },
+    "category_01": {
+      "title": "Bahan Bangunan"
+    },
+    "category_02": {
+      "title": "Sanitari"
+    },
+    "category_03": {
+      "title": "K3"
+    },
+    "tag": "Produk",
+    "error": "tidak di temukan",
+    "header-result": "Temukan produk anda disini... ",
+    "result-01": "ketik sesuatu untuk mulai mencari produk disini",
+    "specification": "Spesifikasi",
+    "type": "Varian",
+    "contact": "Kontak",
+    "cta": "Lihat detail",
+    "tag_pages": "SOLUSI TERBAIK",
+    "header_pages": "Temukan Produk yang Tepat untuk Anda",
+    "desc_pages": "Jelajahi katalog pilihan kami dan dapatkan produk terbaik sesuai dengan prioritas Anda",
+    "semenmerahputih_desc": "Semen Merah Putih menggunakan bahan baku pilihan yang didukung dengan peralatan produksi mutakhir serta tenaga kerja terampil sehingga menghasilkan kekuatan yang lebih tinggi. mengandung material pozzolanic yang memberikan ketahanan bangunan lebih lama, termasuk terhadap lingkungan yang mengandung garam dan sulfat. Memiliki karakteristik butiran yang unik sehingga mempermudah proses pencampuran semen dan menghasilkan permukaan acian yang lebih halus dan tidak mudah retak",
+    "semenmerahputih_features_1": "Lebih Kuat",
+    "semenmerahputih_features_2": "Tahan Lama",
+    "semenmerahputih_features_3": "Mudah Diaplikasikan",
+    "semenmerahputih_features_4": "Waktu pengikatan yang ideal",
+    "semenmerahputih_features_5": "Standar mutu Indonesia SNI",
+    "semenmerahputih_features_6": "Hemat & Efisien",
+    "mortindo_desc": "Mortindo adalah Merk bahan bangunan khususnya mortar atau semen instan, seperti perekat bata, plester, acian, aplikasi lantai (perekat granit & keramik), aplikasi perbaikan beton, aplikasi waterproofing, fast setting concrete, grouting dan epoxy. Saat ini sudah tersertifikat Tingkat Komponen Dalam Negeri (TKDN) yang tinggi, dan juga sudah tergabung World Green Building Council (WGBC). Produk Mortindo yang berkualitas dihasilkan menggunakan mesin-mesin berteknologi terkini dari Jerman, sehingga memberikan hasil yang konsisten",
+    "mortindo_features_1": "Praktis & Mudah Diaplikasikan",
+    "mortindo_features_2": "Kuat, Mampu Menahan Beban",
+    "mortindo_features_3": "Daya Rekat Tinggi",
+    "mortindo_features_4": "Hemat Waktu & Biaya",
+    "mortindo_features_5": "Konsistensi Kualitas Terjamin",
+    "mortindo_features_6": "Tahan Terhadap Abrasi",
+    "drymix_desc": "Drymix menyediakan produk semen instan dengan kualitas terjamin, efektif dan efisien dalam harga, serta mampu untuk menyelesaikan masalah yang berkatian dengan kondisi di Indonesia. Dikembangkan dengan menggunakan teknologi Jerman dan Australia dipadukan dengan bahan baku Indonesia",
+    "drymix_features_1": "Praktis cukup ditambah air. ",
+    "drymix_features_2": "Hemat bahan, ekonomis.",
+    "drymix_features_3": "Meminimalisir retak akibat muai susut ",
+    "drymix_features_4": "Hemat waktu dan biaya",
+    "drymix_features_5": "Memiliki daya rekat yang baik ",
+    "drymix_features_6": "Tidak perlu plamir.",
+    "ziegel_desc": "Bata Ringan Ziegel adalah produk Autoclaved Aerated Concrete (AAC) yang menawarkan berbagai ukuran blok, seperti Blok Standar, Blok Semi Jumbo, dan Blok Jumbo. Ideal untuk berbagai aplikasi konstruksi, seperti gedung komersial, rumah tinggal, dan perkantoran, bata ini diproduksi dengan teknologi dari Jerman dan memenuhi standar nasional. Keunggulannya meliputi ringan, kuat, tahan api, kedap suara, tahan air, serta efisiensi dalam waktu dan biaya pemasangan. Dapat dipotong dan dibor dengan alat standar, memberikan fleksibilitas dalam konstruksi",
+    "ziegel_features_1": "Ringan",
+    "ziegel_features_2": "Kuat dan Kokoh",
+    "ziegel_features_3": "Tahan Api",
+    "ziegel_features_4": "Mudah Digergaji",
+    "ziegel_features_5": "Hemat Biaya dan Waktu",
+    "ziegel_features_6": "Tahan Air",
+
+    "m1_desc": "M1 Waterproofing adalah pelapis kedap air yang diformulasikan secara khusus untuk memberikan perlindungan maksimal terhadap kelembapan dan kebocoran. Produk ini dapat diaplikasikan pada dinding beton, gipsum, plester, asbes, fiberglass, baja, kayu, dan berbagai permukaan lainnya, baik untuk penggunaan interior maupun eksterior",
+    "m1_features_1": "Menutup retak",
+    "m1_features_2": "Elastis",
+    "m1_features_3": "Anti Jamur",
+    "m1_features_4": "Anti Bocor",
+    "m1_features_5": "Perlindungan 8 Tahun",
+    "m1_features_6": "Tahan Panas & Tahan Alkali",
+    "aer_desc": "merek perlengkapan kamar mandi dan dapur kelas premium terkemuka di Indonesia dari PT Anugrah Ekstravisi Raya. Merek ini menyediakan produk-produk berkualitas tinggi seperti kran air, shower, wastafel, floor drain, hingga aksesori sanitasi lainnya dengan garansi",
+    "aer_features_1": "Material Premium",
+    "aer_features_2": "Desain Dual Glazed",
+    "aer_features_3": "Teknologi Hemat Air",
+    "aer_features_4": "Eco Flush",
+    "aer_features_5": "Extra Strong Cyclone Flush",
+
+    "air_desc": "AIR adalah produk sanitasi dengan desain berkualitas dan harga terjangkau untuk mendukung gaya hidup masyarakat modern saat ini",
+    "air_features_1": "Material Premium",
+    "air_features_2": "Garansi Panjang",
+    "air_features_3": "Teknologi Hemat Air",
+    "air_features_4": "Desain Modern & Ergonomis",
+    "air_features_5": "Ketahanan Selang flexibel",
+    "ava_desc": "AVA Collection (AVA Collection by AIR) adalah merk produk perlengkapan sanitasi dan kamar mandi. Merk ini merupakan bagian dari AIR Sanitary dan Sutindo Grup yang menyediakan berbagai pilihan perlengkapan air berkualitas dengan harga terjangkau",
+    "ava_features_1": "Kuat & tahan lama",
+    "ava_features_2": "Ramah lingkungan",
+    "ava_features_3": "Redusi kebisingan",
+    "ava_features_4": "Tahan korosi dan bahan kimia",
+    "ava_features_5": "Beragam jenis dan ukuran",
+    "ava_features_6": "Kualitas teruji (ISO & SNI)",
+    "servvo_desc": "Apar Servvo adalah alat pemadam api ringan yang dirancang untuk memberikan perlindungan efektif terhadap kebakaran. Dikenal dengan sistem pemadaman yang efisien dan desain yang ekonomis, Apar Servvo mudah digunakan dan dioperasikan dalam situasi darurat. Dilengkapi dengan bahan pemadam yang efektif, alat ini membantu mengatasi berbagai jenis kebakaran, menjadikannya solusi penting untuk menjaga keamanan di rumah atau tempat kerja",
+    "servvo_features_1": "Bersertifikat Lengkap dan Standar Nasional",
+    "servvo_features_2": "Dipercaya Oleh Banyak Instansi",
+    "servvo_features_3": "Inovasi Produk Sesuai Kebutuhan Masa Kini",
+    "servvo_features_4": "Garansi Panjang",
+    "servvo_features_5": "Daya Tahan dan Perawatan yang Optimal",
+    "servvo_features_6": "Fire Rating Tinggi",
+    "wavin_desc": "Wavin memberikan solusi yang efektif untuk kebutuhan kehidupan sehari-hari, mulai dari sistem pipa bertekanan untuk air bersih dan air buangan, sistem perpipaan air panas dan dingin yang cocok untuk aplikasi sanitasi dan air minum, pipa pembuangan yang rendah kebisingan hingga solusi pintar untuk air hujan",
+    "wavin_features_1": "Kuat & tahan lama",
+    "wavin_features_2": "Ramah lingkungan",
+    "wavin_features_3": "Redusi kebisingan",
+    "wavin_features_4": "Tahan korosi dan bahan kimia",
+    "wavin_features_5": "Beragam jenis dan ukuran",
+    "wavin_features_6": "Kualitas teruji (ISO & SNI)"
+  },
+  "visiMisi": {
+    "visi": {
+      "title": "Visi",
+      "description": "Menjadi mitra terpercaya dalam penyediaan bahan bangunan yang berkualitas dan memberikan solusi terbaik untuk pengembang dan kontraktor"
+    },
+    "misi": {
+      "title": "Misi",
+      "list": [
+        {
+          "title": "Misi 1",
+          "description": "Menyediakan produk bahan bangunan berkualitas yang memenuhi standar dan kebutuhan proyek"
+        },
+        {
+          "title": "Misi 2",
+          "description": "Memberikan pelayanan terbaik dengan pelayanan pelanggan yang responsif dan solutif"
+        },
+        {
+          "title": "Misi 3",
+          "description": "Mendukung keberhasilan proyek pelanggan kami melalui pengiriman tepat waktu dan layanan purna jual yang profesional"
+        },
+        {
+          "title": "Misi 4",
+          "description": "Mengembangkan solusi teknologi informasi yang inovatif dan adaptif untuk membantu perkembangan bisnis dalam era digital."
+        },
+        {
+          "title": "Misi 5",
+          "description": "Terus berkembang sebagai perusahaan distribusi yang inovatif dan berorientasi pada kepuasaan pelanggan"
+        }
+      ]
+    }
+  },
+  "logistics": {
+    "header": "Logistik & Fasilitas Distribusi",
+    "tag": "Infrastruktur",
+    "desc": "Sinergi Mandiri Perkasa didukung sistem logistik yang terintegrasi, fasilitas distribusi modern, serta armada profesional untuk memastikan setiap pengiriman berlangsung cepat, aman, dan tepat waktu",
+    "gallery": {
+      "area-utama": {
+        "alt": "Fasilitas Logistik 1",
+        "title": "Area Utama",
+        "description": "Kapasitas gudang luas dengan sistem manajemen modern."
+      },
+      "loading-dock": {
+        "alt": "Fasilitas Logistik 2",
+        "title": "Loading Dock",
+        "description": "Area bongkar muat yang terintegrasi."
+      },
+      "armada-distribusi": {
+        "alt": "Fasilitas Logistik 3",
+        "title": "Armada Distribusi",
+        "description": "Kesiapan armada untuk pengiriman tepat waktu."
+      },
+      "sistem-racking": {
+        "alt": "Fasilitas Logistik 4",
+        "title": "Sistem Racking",
+        "description": "Penyusunan barang yang efisien dan aman."
+      },
+      "quality-control": {
+        "alt": "Fasilitas Logistik 5",
+        "title": "Quality Control",
+        "description": "Pengecekan kualitas sebelum barang didistribusikan."
+      },
+      "fasilitas-keamanan": {
+        "alt": "Fasilitas Logistik 6",
+        "title": "Fasilitas Keamanan",
+        "description": "Keamanan 24 jam untuk melindungi aset klien."
+      }
+    }
+  },
+  "bod": {
+    "cta": "Lihat detail",
+    "rudy": {
+      "position": "Pendiri & Direktur ",
+      "description": [
+        "Lahir di Jakarta dan meraih gelar Sarjana Ekonomi Akuntansi dari Universitas Katolik Atma Jaya pada tahun 1993. Sejak duduk di Sekolah Dasar telah terlibat dalam bisnis keluarga sebagai pedagang eceran, yang membentuk dasar pemahaman mengenai dunia bisnis.",
+        "Pada tahun 1991, saat masih kuliah mulai bekerja sebagai profesional di konsultan perpajakan dan mulai tahun 1992 sampai dengan 2013 bekerja di bidang akuntansi dan keuangan. Pengalaman - pengalaman tersebut sangat bernilai dalam membangun bisnis di kemudian hari. Pada tahun 2003 memulai usaha menjadi pedagang eceran dan sukses dalam mengembangkan bisnis tersebut.",
+        "Lima tahun kemudian mendirikan PT Intisukses Mitra Sejati, perusahaan pertama yang menjadi cikal bakal untuk ekspansi bisnis selanjutnya. ",
+        "Pada Tahun 2012 mendirikan perusahaan yang kedua yang bergerak di bidang distribusi semen berkolaborasi dengan rekan bisnis dan sejak itu terus berinovasi dan mendirikan beberapa perusahaan lain dalam berbagai bidang bisnis.",
+        "Dengan pengalaman dan visi yang kuat, berkomitmen untuk terus mengembangkan bisnis yang berkelanjutan dan memberikan kontribusi positif bagi pemangku kepentingan (Stakeholder)."
+      ]
+    },
+    "megawati": {
+      "position": "Pendiri & Direktur Utama ",
+      "description": [
+        "Lahir di Serang dan meraih gelar Sarjana Ekonomi Akuntansi dari Universitas Katolik Atma Jaya pada tahun 1993. Menghabiskan masa kecil hingga menyelesaikan pendidikan Sekolah Menengah Pertama (SMP) di kota Serang, sebelum melanjutkan ke Sekolah Menengah Atas (SMA) di Jakarta pada tahun 1985 sampai dengan perguruan tinggi. ",
+        "Mulai tahun 1992, semasa kuliah bekerja sebagai profesional di bidang keuangan pada perusahaan yang bergerak di bisnis makanan. Selanjutnya mulai tahun 1994 sampai dengan tahun 2001, bekerja di bidang keuangan pada perusahaan developer yang membangun apartemen, hotel, dan perkantoran. ",
+        "Mental kewirausahaan mulai terasah pada tahun 2003 ketika memulai bisnis dengan menjadi pedagang eceran. Pada tahun 2008, mendirikan perusahaan pertamanya, PT Intisukses Mitra Sejati, yang menjadi cikal bakal bagi berdirinya berbagai perusahaan selanjutnya. ",
+        "Dengan pengalaman yang luas dan dedikasi yang tinggi, akan terus memimpin dan mengembangkan usaha yang memberikan dampak positif di berbagai sektor industri. "
+      ]
+    },
+    "suryo": {
+      "position": "Pendiri",
+      "description": [
+        "Lahir di Serang dan meraih gelar Sarjana Ekonomi Akuntansi dari Universitas Katolik Atma Jaya pada tahun 1993. Menghabiskan masa kecil hingga menyelesaikan pendidikan Sekolah Menengah Pertama (SMP) di kota Serang, sebelum melanjutkan ke Sekolah Menengah Atas (SMA) di Jakarta pada tahun 1985 sampai dengan perguruan tinggi. ",
+        "Mulai tahun 1992, semasa kuliah bekerja sebagai profesional di bidang keuangan pada perusahaan yang bergerak di bisnis makanan. Selanjutnya mulai tahun 1994 sampai dengan tahun 2001, bekerja di bidang keuangan pada perusahaan developer yang membangun apartemen, hotel, dan perkantoran. ",
+        "Mental kewirausahaan mulai terasah pada tahun 2003 ketika memulai bisnis dengan menjadi pedagang eceran. Pada tahun 2008, mendirikan perusahaan pertamanya, PT Intisukses Mitra Sejati, yang menjadi cikal bakal bagi berdirinya berbagai perusahaan selanjutnya. ",
+        "Dengan pengalaman yang luas dan dedikasi yang tinggi, akan terus memimpin dan mengembangkan usaha yang memberikan dampak positif di berbagai sektor industri. "
+      ]
+    }
+  },
+  "corevalues": {
+    "heading": "Core Values",
+    "desc_corevalues": "Fondasi budaya kerja kami yang membentuk integritas dan keunggulan perusahaan",
+    "responsibility": {
+      "title": "Responsibility",
+      "description": "Tugas, kewajiban, atau tindakan tertentu yang diharapkan dari seseorang dalam lingkup pekerjaannya."
+    },
+    "excellent": {
+      "title": "Excellent",
+      "description": "Standar kualitas yang tinggi dan konsisten dalam melakukan tugas atau kinerja pekerjaan."
+    },
+    "dedicated": {
+      "title": "Dedicated",
+      "description": "Tingkat komitmen, semangat, dan keseriusan seseorang terhadap tugas atau pekerjaannya."
+    },
+    "detailOriented": {
+      "title": "Detail Oriented",
+      "description": "Kemampuan untuk memperhatikan dan memahami detail kecil atau hal-hal yang mungkin terlewatkan oleh orang lain."
+    },
+    "modernization": {
+      "title": "Modernization",
+      "description": "Proses atau upaya untuk memperbaharui, memodernisasi, atau mengadopsi teknologi, metode, atau proses baru yang lebih efisien dan sesuai dengan perkembangan terkini."
+    },
+    "agility": {
+      "title": "Agility",
+      "description": "Kemampuan seseorang terkini atau organisasi untuk beradaptasi dengan cepat terhadap perubahan dan menanggapi situasi yang berubah dengan fleksibilitas dan responsif."
+    },
+    "senseOfBelonging": {
+      "title": "Sense of Belonging",
+      "description": "Perasaan bahwa seseorang adalah bagian integral dari tim atau organisasi tempat mereka bekerja."
+    }
+  },
+  "achievements": {
+    "tag": "Rekam Jejak",
+    "header": "Sertifikat dan penghargaan yang menjadi bukti komitmen kami",
+    "desc": "Setiap sertifikat dan penghargaan berikut adalah hasil dari proses audit, kepatuhan, dan kemitraan yang kami jaga bersama prinsipal maupun instansi terkait sejak tahun",
+    "label_01": "Sertifikat",
+    "label_02": "Penghargaan",
+    "label_pencapaian": "Pencapaian",
+    "label_years": "Terhitung sejak"
+  },
+
+  "Roominformation": {
+    "activities": "Kegiatan",
+    "others": "Lainnya",
+    "news": "Berita",
+    "activities_empty": "Belum ada berita lain saat ini.",
+    "news_empty": "Belum ada berita lain saat ini.",
+    "tag": "Baru",
+    "exclusive": "eksklusif",
+    "activities_new": "Kegiatan Terbaru",
+    "nesw_new": "Berita Terbaru",
+    "posted": "dipost oleh",
+    "Admin": "Admin",
+    "dinner_celebrate_2025_title": "Best Performance 2024",
+    "dinner_celebrate_2025_description": "Makan Malam Perayaan \"Performa Terbaik 2024\"",
+    "dinner_celebrate_2025_date": "30 Januari 2025",
+    "dinner_celebrate_2025_content_1": [
+      "PT Sinergi Mandiri Perkasa, merayakan pencapaian luar biasa dengan meraih penghargaan sebagai Top Performer 2024. Sebagai bentuk syukur dan apresiasi, perusahaan mengadakan acara makan malam bersama direksi dan seluruh karyawan di Cafe Leviticus 11 - Jakarta Barat.",
+      "Acara ini berlangsung penuh kebersamaan, kehangatan, dan rasa bangga atas dedikasi seluruh tim yang berkontribusi dalam mengantarkan perusahaan mencapai prestasi tersebut.",
+      "Dalam sambutannya, jajaran direksi menyampaikan rasa terima kasih kepada seluruh karyawan yang telah bekerja dengan komitmen tinggi dalam mendukung distribusi produk unggulan, khususnya Semen Merah Putih, hingga mampu mencatatkan performa terbaik di tahun ini.",
+      "Melalui momentum ini, PT Sinergi Mandiri Perkasa semakin termotivasi untuk terus memperkuat sinergi, menjaga kualitas pelayanan, serta memberikan kontribusi nyata dalam mendukung kebutuhan pembangunan di Indonesia."
+    ],
+    "buka_puasa_2025_title": "Buka Puasa 2025",
+    "buka_puasa_2025_description": "Kebersamaan dalam Kegiatan Buka Puasa PT Sinergi Mandiri Perkasa",
+    "buka_puasa_2025_date": "18 maret 2025",
+    "buka_puasa_2025_content_1": [
+      "Dalam suasana penuh berkah di bulan Ramadan, PT Sinergi Mandiri Perkasa menyelenggarakan kegiatan buka puasa bersama pada tanggal 18 Maret 2025 di Resto Fogo - Mall Puri Jakarta Barat. Acara ini dihadiri oleh jajaran direksi dan seluruh karyawan sebagai bentuk kebersamaan dan rasa syukur atas pencapaian perusahaan.",
+      "Selain menjadi momen untuk mempererat silaturahmi, kegiatan ini juga diisi dengan doa bersama. Suasana hangat terasa ketika seluruh keluarga besar PT Sinergi Mandiri Perkasa duduk bersama, menikmati hidangan berbuka, dan saling berbagi cerita.",
+      "Direksi menyampaikan apresiasi kepada seluruh karyawan atas dedikasi dan kerja keras yang telah diberikan, serta mengajak seluruh tim untuk terus menjaga semangat kebersamaan dalam menjalankan visi dan misi perusahaan,",
+      "Melalui kegiatan ini, PT Sinergi Mandiri Perkasa berharap semangat kebersamaan, kepedulian, dan kekompakan dapat terus terjalin, tidak hanya di bulan Ramadan, tetapi juga dalam perjalanan perusahaan ke depan."
+    ],
+    "training_employed_2025_title": "Pelatihan Karyawan",
+    "training_employed_2025_description": "Let's Grow Together bersama PT Sinergi Mandiri Perkasa",
+    "training_employed_2025_date": "9 Agustus 2025",
+    "training_employed_2025_content_1": [
+      "Sebagai bagian dari upaya pengembangan sumber daya manusia, PT Sinergi Mandiri Perkasa baru saja menyelenggarakan kegiatan Interactive Motivational Training bersama coach ternama, Louis Sastrawijaya, pada tanggal 9 Agustus 2025 berlokasi di Brits Hotel - Jakarta Barat.",
+      "Acara ini dihadiri oleh jajaran direksi serta seluruh karyawan PT Sinergi Mandiri Perkasa, dengan tujuan untuk membangun semangat kerja, memperkuat mindset positif, serta menumbuhkan motivasi dalam menghadapi tantangan bisnis ke depan.",
+      "Dalam sesi yang berlangsung interaktif, Coach Louis Sastrawijaya membagikan wawasan menjadi karyawan TOP yang di adaptasi dari Core Value karyawan Reddmas Group yaitu Totalitas (Responsibility dan Excelent), Optimal (Dedication dan Detail Oriented) serta Progresif (Modernization, Agility  dan Sense of Belonging) dalam mendukung kesuksesan individu  maupun perusahaan. Suasana acara terasa penuh energi dan antusiasme, di mana seluruh peserta terlibat aktif dalam berbagai aktivitas yang memacu semangat kebersamaan.",
+      "Melalui kegiatan ini, PT Sinergi Mandiri Perkasa berharap seluruh karyawan semakin termotivasi untuk terus berkontribusi, berinovasi, serta memberikan pelayanan terbaik, khususnya dalam mendukung distribusi produk - produk unggulan di seluruh wilayah."
+    ],
+    "annual_celebrate_2026_title": "Annual Gathering \"Celebrate New Years 2026 \"",
+    "annual_celebrate_2026_description": "Reddmas Group mengawali tahun 2026 dengan menggelar New Year Celebration yang diikuti oleh karyawan dari PT IMS, SMP, IMM, MAS, dan MAP.",
+    "annual_celebrate_2026_date": "12 Januari 2026",
+    "annual_celebrate_2026_content_1": [
+      "Reddmas Group mengawali tahun 2026 dengan menggelar New Year Celebration yang diikuti oleh karyawan dari PT IMS, SMP, IMM, MAS, dan MAP. Acara dibuka dengan sambutan dari Bapak Rudy Gunawan yang menyampaikan apresiasi atas kontribusi seluruh karyawan serta harapan untuk terus melangkah maju bersama di tahun yang baru.",
+      "Suasana semakin meriah dengan pembagian doorprize menarik dan berbagai games seru yang membangkitkan semangat kebersamaan. Tak ketinggalan, photobooth turut dihadirkan untuk mengabadikan momen kebahagiaan, dilanjutkan dengan dinner makan malam bersama dalam suasana hangat dan penuh kekeluargaan.",
+      "Melalui acara ini, Reddmas Group berharap kebersamaan dan semangat positif yang terbangun dapat menjadi energi baru dalam menghadapi tahun 2026."
+    ],
+    "traning_sales_2026_title": "Pelatihan Sales",
+    "traning_sales_2026_description": "\"Growing Beyond Boudaries\" bersama Reddmas Group",
+    "traning_sales_2026_date": "7 Februari 2026",
+    "traning_sales_2026_content_1": [
+      "Bertempat di Fame Hotel, Reddmas Group menggelar training team sales bertajuk “Growing Beyond Boundaries.” Kegiatan ini menjadi langkah awal yang kuat untuk mempersiapkan strategi dan performa penjualan di tahun 2026.",
+      "Training menghadirkan Dedy Budiman, Champion Sales Trainer, yang membawakan materi seputar penguatan mindset, strategi negosiasi, hingga teknik closing yang lebih efektif dan terarah.",
+      "Suasana acara berlangsung interaktif dan penuh semangat. Berbagai games menarik dan sesi ice breaking membuat peserta lebih antusias, kompak, serta membangun chemistry tim yang lebih solid. Tidak hanya belajar, seluruh peserta juga menikmati coffee break dan makan siang bersama, yang menjadi momen kebersamaan dan mempererat kolaborasi antar tim. Melalui training ini, Reddmas Group menegaskan komitmennya untuk terus berkembang dan siap terbang melampaui batas di tahun 2026 dengan energi baru, strategi baru, dan semangat juang yang lebih besar. "
+    ],
+    "Bangkok_2025_title": "Dream team Adventure 2025",
+    "Bangkok_2025_description": "program perjalanan apresiasi dan team Sales Proyek keluarga besar PT Sinergi Mandiri Perkasa ke Bangkok, Thailand",
+    "Bangkok_2025_date": "30 April 2025",
+    "Bangkok_2025_content_1": [
+      "Perjalanan ke Bangkok kali ini menjadi momen istimewa bagi seluruh keluarga besar PT Sinergi Mandiri Perkasa. Meninggalkan sejenak rutinitas kantor yang dinamis, kami melebur dalam hiruk-pikuk kota yang memadukan pesona budaya tradisional dengan kehidupan modern yang tak pernah tidur. Dari megahnya arsitektur kuil-kuil bersejarah hingga keramahan penduduk lokal yang menyambut di setiap sudut jalan, atmosfer ibu kota Thailand ini memberikan ruang bagi tim untuk bernapas sejenak dan menikmati kebersamaan di luar lingkungan kerja formal. Canda tawa yang lepas saat berburu dan mencicipi kelezatan street food menjadi saksi bagaimana sekat-sekat antar departemen perlahan mencair, digantikan oleh rasa kekeluargaan yang hangat dan akrab.",
+      "Mengusung semangat petualangan bersama, perjalanan ini dirancang bukan sekadar sebagai agenda liburan, melainkan sebuah sarana apresiasi dan investasi pada soliditas tim. Pengalaman menyusuri Sungai Chao Phraya yang menenangkan dan kekompakan saat menelusuri lorong-lorong sibuk pasar lokal terbukti ampuh mempererat sinergi di antara kami. Ketika pesawat akhirnya membawa kami kembali pulang, tim PT Sinergi Mandiri Perkasa tidak hanya membawa koper berisi suvenir dan kenangan manis, tetapi juga energi dan motivasi yang kembali penuh. Rangkaian momen di Bangkok ini telah memperkuat ikatan kami sebagai satu kesatuan tim impian yang solid, siap untuk saling bahu-membahu menaklukkan berbagai target menantang dan meraih kesuksesan bersama di tahun 2025."
+    ],
+
+    "Wavin_2026_title": "Bermitra Mengaliri Negri",
+    "Wavin_2026_description": "Gathering Wavin 2026",
+    "Wavin_2026_date": " 4 Juni 2026",
+    "Wavin_2026_content_1": [
+      "Kemitraan yang kuat lahir dari kepercayaan, komitmen, dan visi yang sejalan. Semangat tersebut menjadi landasan terselenggaranya Gathering 2026 yang mempertemukan PT Sinergi Mandiri Perkasa dengan PT Wavin Indonesia dalam sebuah kegiatan bertema \"Bermitra Mengaliri Negeri\". Acara ini bukan sekadar ajang silaturahmi, tetapi juga menjadi ruang kolaborasi untuk mempererat hubungan dengan para mitra bisnis, berbagi wawasan mengenai perkembangan teknologi sistem perpipaan modern, serta memperkuat komitmen bersama dalam menghadirkan solusi yang berkualitas bagi kebutuhan pembangunan nasional",
+      "Melalui semangat kolaborasi yang terus dibangun, PT Sinergi Mandiri Perkasa dan PT Wavin Indonesia percaya bahwa setiap proyek yang sukses berawal dari kemitraan yang solid. Dengan mengedepankan inovasi, kualitas produk, serta pelayanan yang profesional, kedua perusahaan berkomitmen untuk terus mendukung pertumbuhan sektor konstruksi dan infrastruktur Indonesia. Tema \"Bermitra Mengaliri Negeri\" menjadi representasi dari tekad bersama untuk menghadirkan solusi perpipaan yang andal, membangun kepercayaan jangka panjang, dan memberikan nilai tambah bagi seluruh pelanggan, mitra usaha, serta masyarakat Indonesia."
+    ]
+  },
+  "kontak": {
+    "header": "Lokasi Kami",
+    "desc": "Tim kami siap membantu menjawab pertanyaan seputar produk dan layanan Sinergi Mandiri Perkasa",
+    "hero_heading_01": "Kami siap membantu",
+    "hero_heading_02": "Anda!",
+    "hero_subtext": "Silakan Isi Form & Konsultasikan",
+    "alert_message_name": "Nama lengkap harus diisi minimal 8 karakter",
+    "alert_message_email": "Alamat email harus diisi",
+    "alert_message_telp": "Nomor telepon harus diisi dengan format yang benar",
+    "alert_message_city": "Kota harus diisi",
+    "alert_message": "Pesan harus diisi minimal 10 karakter",
+    "form": {
+      "name_label": "Nama Lengkap",
+      "email_label": "Alamat Email",
+      "contact_label": "No.Telpon",
+      "contact_hint": "(Ex.+62812 7777 1111)",
+      "country_label": "Kota Anda",
+      "message_label": "Pesan Anda...",
+      "submit": "Kirim Pesan",
+      "submitting": "Mengirim...",
+      "success": "Pesan Anda berhasil dikirim. Kami akan segera menghubungi Anda.",
+      "error": "Terjadi kesalahan, silakan coba lagi."
+    },
+    "locations": {
+      "kantor-utama": { "name": "Kantor Utama" },
+      "email": { "name": "Email" },
+      "phone": { "name": "Telepon" },
+      "company-profile": { "name": "Download Company Profile" }
+    }
+  },
+  "footer": {
+    "header_footer": "Connect With Us",
+    "header_footer_01": "Head Office"
+  }
+}

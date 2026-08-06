@@ -1,0 +1,523 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "profile": "Company Profile",
+    "profile_desc": "Our company's history and background",
+    "vision-mision": "Vision & Mission",
+    "vision-mision_desc": "Our long-term direction and goals",
+    "value": "Values",
+    "value_desc": "The principles guiding our work",
+    "management": "Management",
+    "management_desc": "The team behind the company's leadership",
+    "achievement": "Achievements",
+    "achievement_desc": "Awards and milestones we have achieved",
+    "logistics": "Logistics",
+    "logistics_desc": "Distribution network and shipping support",
+    "product": "Products",
+    "news": "Room Information",
+    "news_company": "Company News",
+    "news_company_desc": "Latest news about the company",
+    "activity_company": "Company Activities",
+    "activity_company_desc": "Documentation of company activities and events",
+    "career": "Career",
+    "contact": "Contact Us"
+  },
+  "stat": {
+    "label_01": "Brand Partners",
+    "label_02": "Business Clients",
+    "label_03": "Business Divisions",
+    "label_04": "Established Since"
+  },
+  "Carousel": {
+    "ariaLabel": "Company highlights",
+    "selectSlide": "Select slide",
+    "prevSlide": "Previous slide",
+    "nextSlide": "Next slide",
+    "slideLabel": "Slide {number}: {title}",
+    "slides": {
+      "1": {
+        "eyebrow": "Since 2014",
+        "title": "Sinergi Mandiri Perkasa",
+        "subtitle": "Building the future with quality and trust."
+      },
+      "2": {
+        "eyebrow": "Featured Products",
+        "title": "Industry-Standard Quality",
+        "subtitle": "Curated building materials with guaranteed quality and top industry standards.",
+        "ctaLabel": "View Products"
+      },
+      "3": {
+        "eyebrow": "Our Services",
+        "title": "Modern Construction Material Solutions",
+        "subtitle": "The latest technology and professional service for every project need.",
+        "ctaLabel": "Contact Us"
+      },
+      "4": {
+        "eyebrow": "Distribution Network",
+        "title": "On-Time Delivery Service",
+        "subtitle": "Stock availability and efficient shipping — materials arrive on-site on time."
+      },
+      "5": {
+        "eyebrow": "Our Commitment",
+        "title": "Growing Together With Partners & Customers",
+        "subtitle": "Your trust is our top priority."
+      }
+    }
+  },
+  "home_about": {
+    "title": "Authorized Distributor",
+    "overview": {
+      "desc": [
+        "PT Sinergi Mandiri Perkasa stands as a trusted building material distributor dedicated to supplying high-quality products for project requirements. Backed by renowned brands such as Semen Merah Putih, Mortindo, Drymix, Ziegel Lightweight Concrete Blocks, Wavin Pipes, and Servvo Fire Extinguishers, we are committed to delivering precise, efficient solutions and professional service to every business partner.",
+        "\"Your Trust is Our Priority\""
+      ]
+    },
+    "desc_smp": "PT Sinergi Mandiri Perkasa is a distribution company with two main business lines, <orange>Building Materials and FMCG Products</orange>.",
+    "cta": "View details"
+  },
+  "home_features": {
+    "tag": "Competitive Advantages",
+    "header_01": "Sinergi Mandiri Perkasa",
+    "desc": "Why choose us",
+    "products": {
+      "title": "Quality & Trusted Products",
+      "desc": "We offer a range of superior products from renowned brands—such as Semen Merah Putih, Mortindo, Drymix, Ziegel Lightweight Bricks, Wavin Pipes, and Servvo Fire Extinguishers—with quality proven across various projects."
+    },
+    "warehouse": {
+      "title": "Strategic Infrastructure",
+      "desc": "Our network of strategically located warehouses and distribution centers enables rapid response and maximizes supply chain efficiency."
+    },
+    "focus": {
+      "title": "Focus on Project Needs",
+      "desc": "As a project-focused distributor, we understand the required standards and specifications. Every product we supply meets technical requirements and is ready to support smooth construction progress."
+    },
+    "experience": {
+      "title": "Experienced Since 2014",
+      "desc": "Over a decade of experience handling diverse projects with a track record of high service satisfaction."
+    },
+    "team": {
+      "title": "Professional & Responsive Service",
+      "desc": "Backed by an experienced team, we are ready to provide solutions, recommendations, and top-tier service tailored to our business partners' needs."
+    },
+    "delivery": {
+      "title": "On-Time Delivery Service",
+      "desc": "We ensure stock availability and efficient delivery, guaranteeing that materials always arrive at the project site on schedule."
+    }
+  },
+  "home_product": {
+    "tag": "Product Category",
+    "header": "   Comprehensive Industrial & Construction Solutions",
+    "desc": "Providing premium construction materials from trusted national brands, with quality proven across various projects.",
+    "cta": "View all products",
+    "category_00": {
+      "title": "all"
+    },
+    "category_01": {
+      "title": "Building Materials",
+      "desc": "High-quality structural and architectural material solutions for solid, durable project foundations"
+    },
+    "category_02": {
+      "title": "Sanitary Ware",
+      "desc": "Industrial-grade modern sanitary fixtures meeting the highest standards of hygiene and durability"
+    },
+    "category_03": {
+      "title": "Safety Equipment",
+      "desc": "Internationally standardized workplace safety equipment for comprehensive protection in project areas."
+    },
+    "header_brandmarquee": "Trusted by leading brands"
+  },
+  "home_FAQ": {
+    "tag": "Help & FAQ",
+    "header_01": "Questions About",
+    "header_02": " Our Services",
+    "desc": "Find answers to our partners' and clients' most frequently asked questions about procurement, quality, and operations.",
+    "cta": "Contact Us",
+    "items": {
+      "bulk_order": {
+        "q": "Does Sinergi handle bulk order deliveries?",
+        "a": "Yes, we have the fleet and logistics management capabilities to handle bulk deliveries for industrial and commercial projects across various regions."
+      },
+      "quality_standard": {
+        "q": "What are the quality standards for the products provided?",
+        "a": "All our products undergo rigorous Quality Control (QC) processes and meet industry standards (both SNI and international) to ensure the safety of your project."
+      },
+      "custom_product": {
+        "q": "Is it possible to request custom or specific products?",
+        "a": "Certainly. We can procure specific products tailored to your project's budget plan (RAB) and technical specifications. Please contact our engineering team."
+      },
+      "payment_b2b": {
+        "q": "What is the payment system for B2B (Business-to-Business) partners?",
+        "a": "We offer flexible payment terms to verified B2B partners. Terms and conditions apply as outlined in the written contract agreement."
+      }
+    }
+  },
+  "about": {
+    "tag_company": "CORPORATE OVERVIEW",
+    "header_01": "A Reliable Pillar in",
+    "header_02": "Trading & Distribution",
+    "header_03": "National",
+    "ihktisar": [
+      "PT Sinergi Mandiri Perkasa is a company engaged in the sale and distribution of high-quality building materials since 2014. The company is committed to providing optimal solutions for construction project needs across various sectors, including residential, warehousing, hospitality, office, industrial, healthcare, and educational facilities, among others.",
+      "With a primary focus on supplying building materials—such as Semen Merah Putih, Mortindo, Drymix, Ziegel lightweight bricks, Wavin pipes, and Servvo fire extinguishers—we are ready to support developers and contractors in bringing their construction projects to fruition."
+    ],
+    "tag_struktural": "Portfolio Structure & Key Commodities",
+    "tag_sektor": "Sector Category",
+    "desc_lini": "Core Line",
+    "tag_jaringan": "Distribution Network",
+    "desc_jaringan": "Partners & Projects",
+    "notif": "*Integrated logistics coverage data encompasses strategic regions in Indonesia",
+    "header_building": "Building Materials Distribution",
+    "desc_building": "Supply and distribution of industrial-scale structural and architectural materials to meet the needs of infrastructure projects, contractors, and construction retail networks.",
+    "header_fmcg": "FMCG Distribution",
+    "desc_fmcg": "Distribution and supply management of high-quality, hygienic bottled drinking water for the corporate, retail, and FMCG market segments.",
+    "header_supplay": "Integrated Supply Chain Management",
+    "desc_supplay": "Modern warehouse management, accurate inventory tracking, and an integrated logistics transportation network to ensure timely distribution.",
+    "tag_office": "INFRASTRUCTURE",
+    "header_office": "Office",
+    "desc_office": "A primary operational hub and logistics coordination center strategically designed to facilitate the smooth flow of inter-regional trade.",
+    "image-header": "Head Office",
+    "office_reception": "Main Lobby & Reception",
+    "office_front": "Main Courtyard",
+    "office_meeting": "Executive & Partnership Meeting Room",
+    "office_floor2": "Operational Facilities & Team Workspace"
+  },
+  "product": {
+    "category_00": {
+      "title": "all"
+    },
+    "category_01": {
+      "title": "Building Materials"
+    },
+    "category_02": {
+      "title": "Sanitary Ware"
+    },
+    "category_03": {
+      "title": "Safety Equipment"
+    },
+    "tag": "Product",
+    "error": "not found",
+    "header-result": "Find your products here... ",
+    "result-01": "Type something to start searching for products here",
+    "specification": "Specification",
+    "type": "Variant",
+    "contact": "Contact",
+    "cta": "View details",
+    "tag_pages": "BEST SOLUTIONS",
+    "header_pages": "Find the Right Product for You",
+    "desc_pages": "Explore our curated catalog and find the best products that match your priorities",
+    "semenmerahputih_desc": "Semen Merah Putih utilizes select raw materials, state-of-the-art production equipment, and a skilled workforce to deliver superior strength. It contains pozzolanic materials that enhance building durability, offering resistance against environments containing salts and sulfates. Its unique particle characteristics facilitate easier mixing and result in a smoother, crack-resistant skim coat finish.",
+    "semenmerahputih_features_1": "Stronger",
+    "semenmerahputih_features_2": "Durable",
+    "semenmerahputih_features_3": "Easy to Apply",
+    "semenmerahputih_features_4": "Ideal setting time",
+    "semenmerahputih_features_5": "Indonesian quality standard SNI",
+    "semenmerahputih_features_6": "Economical & Efficient",
+    "mortindo_desc": "Mortindo is a brand specializing in building materials—specifically mortars and ready-to-use cement products—such as brick adhesives, plasters, skim coats, flooring applications (granite and ceramic adhesives), concrete repair, waterproofing, fast-setting concrete, grouting, and epoxy. The brand holds a high Domestic Component Level (TKDN) certification and is a member of the World Green Building Council (WGBC). Mortindo’s high-quality products are manufactured using cutting-edge German technology, ensuring consistent results.",
+    "mortindo_features_1": "Practical & Easy to Apply",
+    "mortindo_features_2": "Strong, Load-Resistant",
+    "mortindo_features_3": "High Adhesion",
+    "mortindo_features_4": "Saves Time & Cost",
+    "mortindo_features_5": "Guaranteed Quality Consistency",
+    "mortindo_features_6": "Abrasion Resistant",
+    "drymix_desc": "Drymix offers guaranteed-quality ready-to-use cement products that are cost-effective and efficient, specifically designed to address construction challenges in Indonesia. These products are developed using German and Australian technologies combined with Indonesian raw materials.",
+    "drymix_features_1": "Practical: just add water.",
+    "drymix_features_2": "Eco-efficient, economical.",
+    "drymix_features_3": "Minimizes cracks due to expansion and contraction.",
+    "drymix_features_4": "Saves time and money.",
+    "drymix_features_5": "Good adhesion.",
+    "drymix_features_6": "No filler required.",
+    "ziegel_desc": "Ziegel Lightweight Brick is an Autoclaved Aerated Concrete (AAC) product available in various sizes, including Standard, Semi-Jumbo, and Jumbo blocks. Ideal for diverse construction projects—such as commercial buildings, residential homes, and offices—these bricks are manufactured using German technology and meet national standards. Key advantages include being lightweight, strong, fire-resistant, soundproof, and water-resistant, alongside installation efficiency in terms of time and cost. They can be cut and drilled using standard tools, offering construction flexibility.",
+    "ziegel_features_1": "Lightweight",
+    "ziegel_features_2": "Strong and Sturdyt",
+    "ziegel_features_3": "Fire Resistant",
+    "ziegel_features_4": "Easy to saw",
+    "ziegel_features_5": "Cost and time-saving",
+    "ziegel_features_6": "Waterproof",
+
+    "m1_desc": "M1 Waterproofing is a waterproof coating specially formulated to provide maximum protection against moisture and leakage. Can be applied on concrete walls, gypsum, plaster, asbestos, fiberglass, steel, wood, and other substrates, for both interior and exterior purposes",
+    "m1_features_1": "Crack-bridging",
+    "m1_features_2": "Elastic",
+    "m1_features_3": "Anti-fungal",
+    "m1_features_4": "Leak-proof",
+    "m1_features_5": "8-Year Protection",
+    "m1_features_6": "Heat & Alkali Resistant",
+    "aer_desc": "A leading premium bathroom and kitchen fixture brand in Indonesia from PT Anugrah Ekstravisi Raya. The brand offers high-quality products—such as faucets, showers, washbasins, floor drains, and other sanitary accessories—backed by a warranty",
+    "aer_features_1": "Premium Materials",
+    "aer_features_2": "Dual Glazed Design",
+    "aer_features_3": "Water Saving Technology",
+    "aer_features_4": "Eco Flush",
+    "aer_features_5": "Extra Strong Cyclone Flush",
+    "air_desc": "AIR is sanitary product with quality designs and affordable price to support the modern people’s life style nowadays.",
+    "air_features_1": "Premium Materials",
+    "air_features_2": "Extended Warranty",
+    "air_features_3": "Water-Saving Technology",
+    "air_features_4": "Modern & Ergonomic Design",
+    "air_features_5": "Durable Flexible Hose",
+    "ava_desc": "AVA Collection (AVA Collection by AIR) is a brand of sanitary ware and bathroom fixtures. It is part of AIR Sanitary and the Sutindo Group, offering a wide range of quality plumbing fixtures at affordable prices",
+    "ava_features_1": "Kuat & tahan lama",
+    "ava_features_2": "Ramah lingkungan",
+    "ava_features_3": "Redusi kebisingan",
+    "ava_features_4": "Tahan korosi dan bahan kimia",
+    "ava_features_5": "Beragam jenis dan ukuran",
+    "ava_features_6": "Kualitas teruji (ISO & SNI)",
+    "servvo_desc": "Servvo fire extinguishers are designed to provide effective fire protection. Known for their efficient extinguishing systems and cost-effective design, Servvo extinguishers are easy to use and operate during emergencies. Equipped with effective extinguishing agents, they help tackle various types of fires, making them an essential solution for maintaining safety in homes or workplaces.",
+    "servvo_features_1": "Fully Certified and Meets National Standards",
+    "servvo_features_2": "Trusted by Many Agencies",
+    "servvo_features_3": "Product Innovations to Meet Today's Needs",
+    "servvo_features_4": "Long Warranty",
+    "servvo_features_5": "Optimal Durability and Maintenance",
+    "servvo_features_6": "High Fire Rating",
+    "wavin_desc": "Wavin provides effective solutions for everyday needs, ranging from pressurized piping systems for clean water and wastewater, and hot and cold water piping systems suitable for sanitary and potable water applications, to low-noise drainage pipes and smart rainwater solutions.",
+    "wavin_features_1": "Strong & durable",
+    "wavin_features_2": "Environmentally friendly",
+    "wavin_features_3": "Noise reduction",
+    "wavin_features_4": "Corrosion and chemical resistant",
+    "wavin_features_5": "Various types and sizes",
+    "wavin_features_6": "Quality tested (ISO & SNI)"
+  },
+  "visiMisi": {
+    "visi": {
+      "title": "Vision",
+      "description": "To become a leading and trusted company in Indonesia through continuous innovation and the best service for all stakeholders."
+    },
+    "misi": {
+      "title": "Mission",
+      "list": [
+        {
+          "title": "Mission 1",
+          "description": "Providing quality building materials that meet project standards and requirements"
+        },
+        {
+          "title": "Mission 2",
+          "description": "Delivering excellent service through responsive and solution-oriented customer support"
+        },
+        {
+          "title": "Mission 3",
+          "description": "Supporting the success of our customers' projects through timely delivery and professional after-sales service"
+        },
+        {
+          "title": "Mission 4",
+          "description": "Developing innovative and adaptive information technology solutions to support business growth in the digital era."
+        },
+        {
+          "title": "Mission 5",
+          "description": "Continuously evolving as an innovative distribution company focused on customer satisfaction"
+        }
+      ]
+    }
+  },
+  "logistics": {
+    "header": "Logistics & Distribution Facilities",
+    "tag": "Infrastructure",
+    "desc": "Sinergi Mandiri Perkasa is supported by an integrated logistics system, modern distribution facilities, and a professional fleet to ensure every delivery is fast, secure, and on time.",
+    "gallery": {
+      "area-utama": {
+        "alt": "Logistics Facility 1",
+        "title": "Main Area",
+        "description": "Spacious warehouse capacity with a modern management system."
+      },
+      "loading-dock": {
+        "alt": "Logistics Facility 2",
+        "title": "Loading Dock",
+        "description": "Integrated loading and unloading area."
+      },
+      "armada-distribusi": {
+        "alt": "Logistics Facility 3",
+        "title": "Distribution Fleet",
+        "description": "Fleet readiness for timely delivery."
+      },
+      "sistem-racking": {
+        "alt": "Logistics Facility 4",
+        "title": "Racking System",
+        "description": "Efficient and safe goods arrangement."
+      },
+      "quality-control": {
+        "alt": "Logistics Facility 5",
+        "title": "Quality Control",
+        "description": "Quality checks prior to distribution."
+      },
+      "fasilitas-keamanan": {
+        "alt": "Logistics Facility 6",
+        "title": "Security Facilities",
+        "description": "24-hour security to protect client assets."
+      }
+    }
+  },
+  "bod": {
+    "cta": "View details",
+    "rudy": {
+      "position": "Founder & Director",
+      "description": [
+        "Born in Jakarta and earned a Bachelor of Economics and Accounting degree from Atma Jaya Catholic University in 1993. Since elementary school, I have been involved in the family business as a retailer, which laid the foundation for my understanding of the business world.",
+        "In 1991, while still at university, he began working as a professional at a tax consultancy, and from 1992 to 2013, he worked in the fields of accounting and finance. These experiences proved invaluable in building his business later on. In 2003, he started a retail business and successfully expanded it.",
+        "Five years later, he founded PT Intisukses Mitra Sejati, the company that served as the foundation for subsequent business expansion.",
+        "In 2012, he established a second company specializing in cement distribution in collaboration with a business partner; since then, he has continued to innovate and found several other companies across various business sectors.",
+        "Backed by experience and a strong vision, we are committed to continuously developing a sustainable business and making a positive contribution to stakeholders.s"
+      ]
+    },
+    "megawati": {
+      "position": "Founder & President Director",
+      "description": [
+        "Born in Serang and earned a Bachelor of Economics and Accounting degree from Atma Jaya Catholic University in 1993. He spent his childhood and completed his junior high school education in Serang, before continuing his high school education in Jakarta in 1985 and then went on to college.",
+        "Starting in 1992, while in college, he worked as a professional in finance for a food company. From 1994 to 2001, he worked in finance for a developer building apartments, hotels, and offices.",
+        "His entrepreneurial spirit began to be honed in 2003 when he started a business as a retailer. In 2008, he founded his first company, PT Intisukses Mitra Sejati, which became the forerunner for various subsequent companies.",
+        "With extensive experience and high dedication, he will continue to lead and develop businesses that have a positive impact in various industrial sectors."
+      ]
+    },
+    "suryo": {
+      "position": "Founder",
+      "description": [
+        "Born in Serang and earned a Bachelor of Economics and Accounting degree from Atma Jaya Catholic University in 1993. He spent his childhood and completed his junior high school education in Serang, before continuing his high school education in Jakarta in 1985 and then went on to college.",
+        "Starting in 1992, while in college, he worked as a professional in finance for a food company. From 1994 to 2001, he worked in finance for a developer building apartments, hotels, and offices.",
+        "His entrepreneurial spirit began to be honed in 2003 when he started a business as a retailer. In 2008, he founded his first company, PT Intisukses Mitra Sejati, which became the forerunner for various subsequent companies.",
+        "With extensive experience and high dedication, he will continue to lead and develop businesses that have a positive impact in various industrial sectors."
+      ]
+    }
+  },
+  "corevalues": {
+    "heading": "Core Values",
+    "desc_corevalues": "The foundation of our work culture that shapes the company's integrity and excellence",
+    "responsibility": {
+      "title": "Responsibility",
+      "description": "Specific duties, obligations, or actions expected of an individual within their scope of work."
+    },
+    "excellent": {
+      "title": "Excellent",
+      "description": "A high and consistent standard of quality in carrying out tasks or work performance."
+    },
+    "dedicated": {
+      "title": "Dedicated",
+      "description": "The level of commitment, enthusiasm, and seriousness a person has toward their tasks or work."
+    },
+    "detailOriented": {
+      "title": "Detail Oriented",
+      "description": "The ability to notice and understand small details or things that others might overlook."
+    },
+    "modernization": {
+      "title": "Modernization",
+      "description": "The process or effort to renew, modernize, or adopt new technologies, methods, or processes that are more efficient and aligned with current developments."
+    },
+    "agility": {
+      "title": "Agility",
+      "description": "The ability of an individual or organization to adapt quickly to change and respond to shifting situations with flexibility and responsiveness."
+    },
+    "senseOfBelonging": {
+      "title": "Sense of Belonging",
+      "description": "The feeling that one is an integral part of the team or organization they work in."
+    }
+  },
+  "achievements": {
+    "tag": "Track Record",
+    "header": "Certificates and awards demonstrating our commitment",
+    "desc": "Each of the following certificates and awards is the result of audit, compliance, and partnership processes maintained with our principals and relevant agencies since",
+    "label_01": "Certificate",
+    "label_02": "Award",
+    "label_pencapaian": "Milestone",
+    "label_years": "As of"
+  },
+  "Roominformation": {
+    "activities": "Activities",
+    "others": "Others",
+    "news": "News",
+    "activities_empty": "There are no other updates at the moment.",
+    "news_empty": "There are no other news items at the moment.",
+    "tag": "New",
+    "exclusive": "exclusive",
+    "activities_new": "Latest activities",
+    "nesw_new": "Latest news",
+    "posted": "posted by",
+    "Admin": "Admin",
+    "dinner_celebrate_2025_title": "Top Performance 2024",
+    "dinner_celebrate_2025_description": "Dinner Celebrating 'Top Performer 2024'",
+    "dinner_celebrate_2025_date": "January 30, 2025",
+    "dinner_celebrate_2025_content_1": [
+      "PT Sinergi Mandiri Perkasa celebrated an outstanding achievement by winning the 'Top Performer 2024' award. To express gratitude and appreciation, the company hosted a dinner for the board of directors and all employees at Cafe Leviticus 11 in West Jakarta.",
+      "The event was filled with a sense of togetherness, warmth, and pride regarding the dedication of the entire team, whose contributions enabled the company to reach this milestone.",
+      "In their remarks, the board of directors expressed their gratitude to all employees for their unwavering commitment to distributing flagship products—particularly Semen Merah Putih—which drove the company to achieve its best performance of the year.",
+      "This occasion has further motivated PT Sinergi Mandiri Perkasa to strengthen synergy, maintain service quality, and make a tangible contribution to meeting Indonesia's development needs."
+    ],
+    "buka_puasa_2025_title": "2025 Iftar Gathering",
+    "buka_puasa_2025_description": "A shared Iftar gathering for PT Sinergi Mandiri Perkasa...",
+    "buka_puasa_2025_date": "March 18, 2025",
+    "buka_puasa_2025_content_1": [
+      "Amidst the blessed atmosphere of Ramadan, PT Sinergi Mandiri Perkasa held a joint Iftar gathering on March 18, 2025, at Fogo Restaurant, Mall Puri, West Jakarta. The event was attended by the board of directors and all employees, serving as an expression of togetherness and gratitude for the company's achievements.",
+      "Beyond strengthening bonds and camaraderie, the event also featured a collective prayer. A warm atmosphere filled the room as the extended PT Sinergi Mandiri Perkasa family sat together, enjoyed the Iftar meal, and shared stories.",
+      "The board of directors expressed their appreciation to all employees for their dedication and hard work, while encouraging the entire team to maintain this spirit of togetherness in pursuing the company's vision and mission.",
+      "Through this event, PT Sinergi Mandiri Perkasa hopes that the spirit of togetherness, care, and unity will continue to flourish—not only during Ramadan but also throughout the company's future journey."
+    ],
+    "training_employed_2025_title": "Employe Training",
+    "training_employed_2025_description": "Let's Grow Together with PT Sinergi Mandiri Perkasa",
+    "training_employed_2025_date": "August 9, 2025",
+    "training_employed_2025_content_1": [
+      "As part of its human resource development initiatives, PT Sinergi Mandiri Perkasa recently held an Interactive Motivational Training session with renowned coach Louis Sastrawijaya on August 9, 2025, at Brits Hotel, West Jakarta.",
+      "The event was attended by the board of directors and all employees of PT Sinergi Mandiri Perkasa, with the aim of boosting morale, strengthening a positive mindset, and fostering motivation to face future business challenges.",
+      "During the interactive session, Coach Louis Sastrawijaya shared insights on becoming a 'TOP' employee—a concept adapted from the Reddmas Group's core values: *Totalitas* (Responsibility and Excellence), *Optimal* (Dedication and Detail-Oriented), and *Progresif* (Modernization, Agility, and Sense of Belonging)—to support both individual and corporate success. The event was filled with energy and enthusiasm, with all participants actively engaging in activities that fostered a spirit of togetherness.",
+      "Through this event, PT Sinergi Mandiri Perkasa hopes that all employees will be further motivated to continue contributing, innovating, and delivering excellent service, particularly in supporting the distribution of flagship products across all regions."
+    ],
+    "annual_celebrate_2026_title": "Annual Gathering 'Celebrate New Year 2026'",
+    "annual_celebrate_2026_description": "Reddmas Group kicked off 2026 by hosting a New Year Celebration attended by employees from PT IMS, SMP, IMM, MAS, and MAP",
+    "annual_celebrate_2026_date": "January 12, 2026",
+    "annual_celebrate_2026_content_1": [
+      "Reddmas Group kicked off 2026 by hosting a New Year Celebration attended by employees from PT IMS, SMP, IMM, MAS, and MAP. The event opened with remarks from Mr. Rudy Gunawan, who expressed appreciation for the employees' contributions and shared his hopes for moving forward together in the new year.",
+      "The atmosphere was enlivened by the distribution of attractive door prizes and various fun games that fostered a spirit of togetherness. A photo booth was also available to capture happy moments, followed by a communal dinner held in a warm, family-like atmosphere.",
+      "Through this event, Reddmas Group hopes that the sense of togetherness and positive spirit cultivated will serve as a source of renewed energy for the year ahead."
+    ],
+    "traning_sales_2026_title": "Sales Training",
+    "traning_sales_2026_description": "\"Growing Beyond Boudaries\" with Reddmas Group",
+    "traning_sales_2026_date": "February 7, 2026",
+    "traning_sales_2026_content_1": [
+      "Held at Fame Hotel, Reddmas Group organized a sales team training session titled 'Growing Beyond Boundaries.' This event served as a strong initial step in preparing sales strategies and performance goals for 2026.",
+      "The training featured Dedy Budiman, a Champion Sales Trainer, who presented material covering mindset strengthening, negotiation strategies, and more effective, targeted closing techniques.",
+      "The event was interactive and full of energy. Engaging games and ice-breaking sessions boosted participant enthusiasm and unity, helping to build stronger team chemistry. Beyond the learning sessions, participants enjoyed coffee breaks and a shared lunch, fostering togetherness and strengthening collaboration across teams. Through this training, Reddmas Group reaffirmed its commitment to continuous growth and readiness to soar beyond limits in 2026—fueled by renewed energy, fresh strategies, and a heightened fighting spirit."
+    ],
+    "Bangkok_2025_title": "Dream Team Adventure 2025",
+    "Bangkok_2025_description": "An appreciation and team Sales Project trip to Bangkok, Thailand, for the extended family of PT Sinergi Mandiri Perkasa",
+    "Bangkok_2025_date": "April 30, 2025",
+    "Bangkok_2025_content_1": [
+      "This trip to Bangkok marked a special occasion for the entire PT Sinergi Mandiri Perkasa family. Stepping away briefly from our dynamic office routine, we immersed ourselves in the city's vibrant energy—a blend of traditional cultural charm and a modern lifestyle that never sleeps. From the majestic architecture of historic temples to the warm hospitality of locals at every street corner, the atmosphere of the Thai capital allowed the team to take a breath and enjoy each other's company outside the formal work environment. Carefree laughter shared while hunting for and tasting delicious street food bore witness to how departmental barriers gradually melted away, replaced by a warm, close-knit sense of family.",
+      "Driven by a shared spirit of adventure, this trip was designed not merely as a vacation, but as a means of appreciation and an investment in team solidarity. The soothing experience of cruising the Chao Phraya River and the camaraderie shown while navigating the bustling aisles of local markets proved highly effective in strengthening our synergy. As the plane finally carried us home, the PT Sinergi Mandiri Perkasa team returned not only with suitcases full of souvenirs and sweet memories but also with renewed energy and motivation. These moments in Bangkok have solidified our bond as a cohesive 'dream team,' ready to work hand-in-hand to conquer challenging targets and achieve shared success in 2025."
+    ],
+    "Wavin_2026_title": "Partnering to Supply the Nation",
+    "Wavin_2026_description": "Wavin Gathering 2026",
+    "Wavin_2026_date": "June 4, 2026",
+    "Wavin_2026_content_1": [
+      "Strong partnerships are built on trust, commitment, and a shared vision. This spirit formed the foundation of the 2026 Gathering, which brought together PT Sinergi Mandiri Perkasa and PT Wavin Indonesia for an event themed 'Partnering to Supply the Nation.' More than just a social gathering, the event served as a collaborative platform to strengthen relationships with business partners, share insights on modern piping system technology, and reinforce a mutual commitment to delivering high-quality solutions for national development needs.",
+      "Through this ongoing spirit of collaboration, PT Sinergi Mandiri Perkasa and PT Wavin Indonesia believe that every successful project begins with a solid partnership. By prioritizing innovation, product quality, and professional service, both companies are committed to supporting the growth of Indonesia's construction and infrastructure sectors. The theme 'Partnering to Supply the Nation' embodies their shared determination to provide reliable piping solutions, build long-term trust, and deliver added value to all customers, business partners, and the people of Indonesia."
+    ]
+  },
+  "kontak": {
+    "header": "Our Location",
+    "desc": "Our team is ready to help answer questions regarding Sinergi Mandiri Perkasa's products and services",
+    "hero_heading_01": "We're here to help",
+    "hero_heading_02": "You!",
+    "hero_subtext": "Fill out the form for a consultation",
+    "alert_message_name": "Full name must be at least 8 characters long",
+    "alert_message_email": "Email address is required",
+    "alert_message_telp": "Phone number must be entered in the correct format",
+    "alert_message_city": "City is required",
+    "alert_message": "Message must be at least 10 characters long",
+    "form": {
+      "name_label": "Full Name",
+      "email_label": "Email Address",
+      "contact_label": "Phone Number",
+      "contact_hint": "(e.g., +62812 7777 1111)",
+      "country_label": "Your City",
+      "message_label": "Your Message...",
+      "submit": "Send Message",
+      "submitting": "Sending...",
+      "success": "Your message has been sent successfully. We will contact you shortly.",
+      "error": "An error occurred; please try again."
+    },
+    "locations": {
+      "kantor-utama": { "name": "Head Office" },
+      "email": { "name": "Email" },
+      "phone": { "name": "Phone" },
+      "company-profile": { "name": "Download Company Profile" }
+    }
+  },
+  "footer": {
+    "header_footer": "Connect With Us",
+    "header_footer_01": "Head Office"
+  }
+}

@@ -1,26 +1,131 @@
 @import "tailwindcss";
 
+/* ─────────────────────────────────────────────────────────────
+   1. COLOR & GRADIENT SYSTEM (CORPORATE ELEGANT)
+   ───────────────────────────────────────────────────────────── */
 :root {
+  /* Surface & Text (Light Mode) */
   --background: #ffffff;
-  --foreground: #171717;
-}
+  --foreground: #1e293b;
+  --muted-text: #64748b;
+  --border-color: #e2e8f0;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Raw Hex Colors */
+  --color-smp-blue-dark: #0f172a;
+  --color-smp-blue: #3257b5;
+  --color-smp-red: #c2410c;
+  --color-smp-orange: #f7941e;
+  --color-reddmas-red: #d23439;
+  --grad-blue-corporate: linear-gradient(
+    135deg,
+    #0f172a 0%,
+    #1e3a8a 50%,
+    #1e40af 100%
+  );
+  --grad-red-cta: linear-gradient(135deg, #991b1b 0%, #c2410c 100%);
+  --grad-gold-accent: linear-gradient(135deg, #b45309 0%, #d97706 100%);
+  --grad-warm: linear-gradient(135deg, #dc2626 0%, #f7941e 100%);
+  --grad-logo: linear-gradient(90deg, #dc2626 0%, #f7941e 50%, #2563eb 100%);
+  --grad-glass-light: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b0f19;
+    --foreground: #f8fafc;
+    --muted-text: #94a3b8;
+    --border-color: #1e293b;
   }
 }
 
+/* ─────────────────────────────────────────────────────────────
+   2. TAILWIND V4 THEME CONFIGURATION
+   ───────────────────────────────────────────────────────────── */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins);
+}
+
+@theme {
+  --color-smp-dark: var(--color-smp-blue-dark);
+  --color-smp-blue: var(--color-smp-blue);
+  --color-smp-red: var(--color-smp-red);
+  --color-smp-orange: var(--color-smp-orange);
+  --color-smp-muted: var(--muted-text);
+  --color-reddmas-red: var(--color-reddmas-red);
+  --color-smp-border: var(--border-color);
+
+  --background-image-grad-corporate: var(--grad-blue-corporate);
+  --background-image-grad-cta: var(--grad-red-cta);
+  --background-image-grad-gold: var(--grad-gold-accent);
+  --background-image-grad-warm: var(--grad-warm);
+  --background-image-grad-logo: var(--grad-logo);
+}
+
+/* ─────────────────────────────────────────────────────────────
+   3. BASE STYLES
+   ───────────────────────────────────────────────────────────── */
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   4. UTILITIES & HELPER CLASSES
+   ───────────────────────────────────────────────────────────── */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .glass-header {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  }
+
+  .corporate-shadow {
+    box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08);
+  }
+
+  .text-gradient-orange {
+    background-image: var(--grad-gold-accent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-warm {
+    background-image: var(--grad-warm);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-gradient-logo {
+    background-image: var(--grad-logo);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .border-gradient-orange {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(var(--background), var(--background)) padding-box,
+      var(--grad-gold-accent) border-box;
+  }
 }

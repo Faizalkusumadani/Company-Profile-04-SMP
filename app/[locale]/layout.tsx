@@ -133,8 +133,6 @@ export async function generateMetadata({
 
     manifest: "/manifest.webmanifest",
 
-    // Deklarasikan eksplisit kalau tidak pakai file convention
-    // (app/icon.png, app/apple-icon.png, dst)
     icons: {
       icon: [
         { url: "/logo/favicon.ico", sizes: "any" },

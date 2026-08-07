@@ -81,6 +81,7 @@ export default function BrandMarquee({
                     src={brand.logo}
                     alt={`${brand.name} logo`}
                     fill
+                    quality={65}
                     sizes="auto"
                     className="object-contain"
                   />

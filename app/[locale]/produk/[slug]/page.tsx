@@ -29,7 +29,7 @@ export async function generateMetadata({
 
   const tProduct = await getTranslations({ locale, namespace: "product" });
 
-  const title = `${produk.namaBrand} | ${siteName}`;
+  const title = produk.namaBrand;
   const description = tProduct(produk.descKey);
   const url = `${siteUrl}/${locale}${produk.href}`;
   const ogImage = `${siteUrl}${produk.gambarUtama}`;
@@ -45,17 +45,19 @@ export async function generateMetadata({
       },
     },
     openGraph: {
-      title,
+      title: `${siteName} | ${produk.namaBrand}`,
       description,
       url,
       siteName,
       type: "article",
       locale: locale === "id" ? "id_ID" : "en_US",
-      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+      images: [
+        { url: ogImage, width: 1200, height: 630, alt: produk.namaBrand },
+      ],
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: `${siteName} | ${produk.namaBrand}`,
       description,
       images: [ogImage],
     },

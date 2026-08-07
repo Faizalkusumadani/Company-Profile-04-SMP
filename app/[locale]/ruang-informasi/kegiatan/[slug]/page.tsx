@@ -12,9 +12,9 @@ import Sidebar from "@/components/Sidebar";
 import Gallery from "@/components/Slides-Gallery";
 import Breadcrumbs from "@/components/Breadcrumb";
 
-// Ganti sesuai preferensi: hardcode langsung, bukan lewat env var.
 const siteUrl = "https://sinergimandiriperkasa.co.id";
 const siteName = "PT. Sinergi Mandiri Perkasa";
+
 type Params = { locale: string; slug: string };
 type Props = { params: Promise<Params> };
 
@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title,
+      title: `${siteName} | ${title}`,
       description,
       url,
       siteName,
@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: `${siteName} | ${title}`,
       description,
       images: [ogImage],
     },

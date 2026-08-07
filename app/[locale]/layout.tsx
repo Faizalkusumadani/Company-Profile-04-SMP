@@ -53,7 +53,7 @@ export async function generateMetadata({
     metadataBase: new URL(siteConfig.url),
 
     title: {
-      default: `${siteConfig.name} | Distributor Bahan Bangunan untuk kebutuhan proyek di wilayah Jabodetabek  `,
+      default: `${siteConfig.name} | Distributor Bahan Bangunan untuk kebutuhan proyek di wilayah Jabodetabek `,
       template: `${siteConfig.name} | %s`,
     },
 
@@ -101,7 +101,7 @@ export async function generateMetadata({
       alternateLocale: locale === "id" ? ["en_US"] : ["id_ID"],
       url: `${siteConfig.url}${locale}`,
       siteName: siteConfig.name,
-      title: `${siteConfig.name} | Beranda`,
+      title: `${siteConfig.name} | Distributor Bahan Bangunan untuk kebutuhan proyek di wilayah Jabodetabek`,
       description: siteConfig.description,
       images: [
         {
@@ -116,7 +116,7 @@ export async function generateMetadata({
 
     twitter: {
       card: "summary_large_image",
-      title: `${siteConfig.name} | Beranda`,
+      title: `${siteConfig.name} | Distributor Bahan Bangunan untuk kebutuhan proyek di wilayah Jabodetabek`,
       description: siteConfig.description,
       images: [siteConfig.ogImage],
     },

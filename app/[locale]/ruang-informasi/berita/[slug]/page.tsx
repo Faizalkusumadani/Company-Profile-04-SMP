@@ -31,7 +31,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "Roominformation" });
   const title = t(`${news.contentKey}_title`);
   const description = t(`${news.contentKey}_description`);
-
   const url = `${siteUrl}/${locale}${generateHref(news.slug)}`;
   const ogImage = `${siteUrl}${news.image}`;
 
@@ -46,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       },
     },
     openGraph: {
-      title,
+      title: `${siteName} | ${title}`,
       description,
       url,
       siteName,
@@ -56,7 +55,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: `${siteName} | ${title}`,
       description,
       images: [ogImage],
     },

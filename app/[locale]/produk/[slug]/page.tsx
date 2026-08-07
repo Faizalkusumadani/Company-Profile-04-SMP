@@ -7,6 +7,9 @@ import produkDetailList from "@/data/data-produk";
 import PageBreadcrumb from "@/components/Breadcrumb";
 import type { Metadata } from "next";
 
+const siteUrl = "https://sinergimandiriperkasa.co.id";
+const siteName = "PT. Sinergi Mandiri Perkasa";
+
 export async function generateStaticParams() {
   const locales = ["id", "en"];
   return locales.flatMap((locale) =>
@@ -26,9 +29,36 @@ export async function generateMetadata({
 
   const tProduct = await getTranslations({ locale, namespace: "product" });
 
+  const title = `${produk.namaBrand} | ${siteName}`;
+  const description = tProduct(produk.descKey);
+  const url = `${siteUrl}/${locale}${produk.href}`;
+  const ogImage = `${siteUrl}${produk.gambarUtama}`;
+
   return {
-    title: produk.namaBrand,
-    description: tProduct(produk.descKey),
+    title,
+    description,
+    alternates: {
+      canonical: url,
+      languages: {
+        id: `${siteUrl}/id${produk.href}`,
+        en: `${siteUrl}/en${produk.href}`,
+      },
+    },
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName,
+      type: "article",
+      locale: locale === "id" ? "id_ID" : "en_US",
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [ogImage],
+    },
   };
 }
 

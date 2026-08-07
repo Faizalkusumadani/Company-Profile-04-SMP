@@ -23,8 +23,8 @@ const siteConfig = {
   shortName: "Sinergi Mandiri Perkasa",
   description:
     "Sinergi Mandiri Perkasa hadir sebagai distributor bahan bangunan terpercaya yang berfokus pada penyediaan produk-produk berkualitas tinggi untuk kebutuhan proyek di wilayah Jabodetabek",
-  ogImage: "/og-image.png",
-  themeColor: "#ffffff", // TODO: sesuaikan dengan warna brand kamu
+  ogImage: "/logo/og-image.png",
+  themeColor: "#ffffff",
 } as const;
 
 // ─── Static Params (wajib untuk static generation per locale) ────────────────

@@ -15,7 +15,6 @@ import Breadcrumbs from "@/components/Breadcrumb";
 // Ganti sesuai preferensi: hardcode langsung, bukan lewat env var.
 const siteUrl = "https://sinergimandiriperkasa.co.id";
 const siteName = "PT. Sinergi Mandiri Perkasa";
-
 type Params = { locale: string; slug: string };
 type Props = { params: Promise<Params> };
 
@@ -31,7 +30,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: "Roominformation" });
   const title = t(`${activity.contentKey}_title`);
   const description = t(`${activity.contentKey}_description`);
-
   const url = `${siteUrl}/${locale}${generateHref(activity.slug)}`;
   const ogImage = `${siteUrl}${activity.image}`;
 

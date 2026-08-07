@@ -21,8 +21,12 @@ interface SlideData {
 const slides: SlideData[] = [
   { id: 1, image: "/carousel/Banner-Carousel-01.png" },
   { id: 2, image: "/carousel/Banner-Carousel-02.png", ctaHref: "/produk" },
-  { id: 3, image: "/carousel/Banner-Carousel-03.png", ctaHref: "/kontak" },
-  { id: 4, image: "/carousel/Banner-Carousel-04.jpg" },
+  {
+    id: 3,
+    image: "/carousel/Banner-Carousel-03.png",
+    ctaHref: "/kontak",
+  },
+  { id: 4, image: "/carousel/Banner-Carousel-04.png" },
   { id: 5, image: "/carousel/Banner-Carousel-05.png" },
 ];
 

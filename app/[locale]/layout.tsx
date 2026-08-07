@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
 import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "../globals.css";
@@ -17,17 +18,27 @@ const poppins = Poppins({
 
 // ─── Site Config ──────────────────────────────────────────────────────────────
 const siteConfig = {
-  url: "https://build.sinergimandiriperkasa.co.id/",
+  url: "https://sinergimandiriperkasa.co.id/",
   name: "Sinergi Mandiri Perkasa",
   shortName: "Sinergi Mandiri Perkasa",
   description:
-    "Sinergi Mandiri Perkasa membangun ekosistem bisnis terintegrasi: Trading, HVAC Installation, IT Solutions, Creative IP, dan F&B. Inovasi & kolaborasi untuk pertumbuhan berkelanjutan.",
+    "Sinergi Mandiri Perkasa hadir sebagai distributor bahan bangunan terpercaya yang berfokus pada penyediaan produk-produk berkualitas tinggi untuk kebutuhan proyek di wilayah Jabodetabek",
   ogImage: "/og-image.png",
+  themeColor: "#ffffff", // TODO: sesuaikan dengan warna brand kamu
 } as const;
 
 // ─── Static Params (wajib untuk static generation per locale) ────────────────
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
+}
+
+// ─── Viewport (wajib dipisah dari metadata di Next.js 14+) ──────────────────
+export function generateViewport(): Viewport {
+  return {
+    width: "device-width",
+    initialScale: 1,
+    themeColor: siteConfig.themeColor,
+  };
 }
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
@@ -42,7 +53,7 @@ export async function generateMetadata({
     metadataBase: new URL(siteConfig.url),
 
     title: {
-      default: `${siteConfig.name} | Beranda`,
+      default: `${siteConfig.name} | Distributor Bahan Bangunan untuk kebutuhan proyek di wilayah Jabodetabek  `,
       template: `${siteConfig.name} | %s`,
     },
 
@@ -51,7 +62,7 @@ export async function generateMetadata({
     keywords: [
       "Sinergi Mandiri Perkasa",
       "Distributor bahan bangunan",
-      "Distributor bahan bangunan Proyek ",
+      "Distributor bahan bangunan Proyek",
       "Distributor 2 divisi",
       "Trading & Distribution",
       "Distributor Semen",
@@ -59,6 +70,14 @@ export async function generateMetadata({
 
     authors: [{ name: siteConfig.name, url: siteConfig.url }],
     creator: siteConfig.name,
+    publisher: siteConfig.name,
+
+    // Hindari nomor telepon otomatis jadi link di mobile browser
+    formatDetection: {
+      telephone: false,
+      email: false,
+      address: false,
+    },
 
     robots: {
       index: true,
@@ -69,6 +88,11 @@ export async function generateMetadata({
         "max-image-preview": "large",
         "max-snippet": -1,
       },
+    },
+
+    // Ganti dengan kode verifikasi asli dari Google Search Console / Bing Webmaster
+    verification: {
+      google: "NeEe-TfVPT8fXlnDzmiHGryE4FryGpUmzGDgtrvltyA",
     },
 
     openGraph: {
@@ -102,10 +126,22 @@ export async function generateMetadata({
       languages: {
         "id-ID": `${siteConfig.url}id`,
         "en-US": `${siteConfig.url}en`,
+        // fallback untuk locale yang tidak match id/en
+        "x-default": `${siteConfig.url}id`,
       },
     },
 
     manifest: "/manifest.webmanifest",
+
+    // Deklarasikan eksplisit kalau tidak pakai file convention
+    // (app/icon.png, app/apple-icon.png, dst)
+    icons: {
+      icon: [
+        { url: "/logo/favicon.ico", sizes: "any" },
+        { url: "/logo/icon.png", type: "image/png" },
+      ],
+      apple: [{ url: "/logo/apple-touch-icon.png" }],
+    },
 
     appleWebApp: {
       capable: true,
@@ -144,11 +180,12 @@ export default async function LocaleLayout({
     logo: `${siteConfig.url}/logo/logo-smp.png`,
     image: `${siteConfig.url}${siteConfig.ogImage}`,
     telephone: "+62-21-550-3019",
+    // TODO: pastikan domain email ini benar & aktif — beda dengan domain situs
     email: "sales@smp-merahputih.com",
     priceRange: "$$",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Rukan CBD Blok M No.51 Green Lake City Tangerang ",
+      streetAddress: "Rukan CBD Blok M No.51 Green Lake City Tangerang",
       addressLocality: "Tangerang Kota",
       addressRegion: "Banten",
       postalCode: "15147",
@@ -159,10 +196,12 @@ export default async function LocaleLayout({
       latitude: -6.183925463337667,
       longitude: 106.69935959559166,
     },
-    areaServed: {
-      "@type": "AdministrativeArea",
-      name: "Banten",
-    },
+    // Diperluas sesuai cakupan bisnis (Jabodetabek), bukan cuma Banten
+    areaServed: [
+      { "@type": "AdministrativeArea", name: "DKI Jakarta" },
+      { "@type": "AdministrativeArea", name: "Banten" },
+      { "@type": "AdministrativeArea", name: "Jawa Barat" },
+    ],
     sameAs: [
       "https://www.instagram.com/sinergi.mp?utm_source=qr&igsh=MTljOTdwc2p0NjdzYw==",
     ],
@@ -183,6 +222,9 @@ export default async function LocaleLayout({
           <main className="bg-background min-h-screen">{children}</main>
           <Footer />
         </NextIntlClientProvider>
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
+        )}
       </body>
     </html>
   );

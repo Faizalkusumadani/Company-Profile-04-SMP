@@ -180,7 +180,7 @@ export default function Home() {
 
       {/* ── Section Stat ── */}
       <section id="home_stat">
-        <div className="px-4 sm:px-6 py-4 md:py-8 bg-zinc-100">
+        <div className="px-4 sm:px-6 py-4 md:py-8  bg-zinc-50">
           <div className="w-full max-w-7xl mx-auto">
             <div className="grid grid-cols-2 sm:grid-cols-4 divide-x-0 divide-y-0">
               {stats.map((stat, index) => {

@@ -19,7 +19,7 @@ interface BrandMarqueeProps {
 export default function BrandMarquee({
   brands,
   title,
-  speed = 60, // Diubah ke 60 agar jauh lebih lambat dan elegan
+  speed = 60,
 }: BrandMarqueeProps) {
   const duplicatedBrands = [...brands, ...brands];
 
@@ -51,10 +51,10 @@ export default function BrandMarquee({
   const x = useTransform(baseX, (v) => `${v}%`);
 
   return (
-    <section className="py-16 bg-gray-50 dark:bg-neutral-900 border-y border-gray-100 dark:border-neutral-800 overflow-hidden">
+    <section className="py-16 bg-gray-50 border-y border-gray-100 overflow-hidden">
       {title && (
         <div className="max-w-7xl mx-auto px-4 mb-12 text-center">
-          <h2 className="text-xs md:text-sm font-semibold tracking-widest text-gray-500 uppercase dark:text-gray-400">
+          <h2 className="text-xs md:text-sm font-semibold tracking-widest text-gray-500 uppercase">
             {title}
           </h2>
         </div>
@@ -82,11 +82,11 @@ export default function BrandMarquee({
                     alt={`${brand.name} logo`}
                     fill
                     quality={65}
-                    sizes="auto"
+                    sizes="(min-width: 768px) 208px, 144px"
                     className="object-contain"
                   />
                 ) : (
-                  <span className="text-2xl md:text-3xl font-bold tracking-tight text-gray-800 dark:text-gray-200 select-none">
+                  <span className="text-2xl md:text-3xl font-bold tracking-tight text-foreground select-none">
                     {brand.name}
                   </span>
                 )}

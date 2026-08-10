@@ -94,7 +94,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="relative w-full min-h-screen ">
+    <div className="relative w-full min-h-screen">
       <header className="relative w-full h-auto min-h-90 overflow-hidden">
         <Carousel />
       </header>
@@ -287,7 +287,7 @@ export default function Home() {
       </section>
 
       {/* ── Section Kategori Produk ── */}
-      <section className="px-4 py-20 sm:py-24 bg-zinc-50 border-t border-gray-200">
+      <section className="px-4 py-20 sm:py-24  border-t border-gray-200">
         <div className="mx-auto max-w-7xl">
           {/* Header Kategori */}
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-6">

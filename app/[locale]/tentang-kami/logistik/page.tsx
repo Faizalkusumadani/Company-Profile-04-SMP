@@ -104,12 +104,12 @@ export default async function LogistikPage() {
                 className="object-cover transform group-hover:scale-110 transition-transform duration-700 ease-in-out"
               />
 
-              <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
-                <div className="transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500 ease-out">
-                  <h3 className="text-xl md:text-2xl font-bold text-smp-orange mb-2">
+              <div className="absolute inset-0 bg-linear-to-t from-black/85 via-black/40 to-transparent sm:from-black/80 sm:via-black/30 opacity-100 sm:opacity-0 sm:group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-4 sm:p-6">
+                <div className="transform translate-y-0 sm:translate-y-8 sm:group-hover:translate-y-0 transition-transform duration-500 ease-out">
+                  <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-smp-orange mb-1 sm:mb-2">
                     {t(`logistics.gallery.${item.id}.title`)}
                   </h3>
-                  <p className="text-xs md:text-sm text-white/70 line-clamp-3">
+                  <p className="text-xs md:text-sm text-white/70 line-clamp-2 sm:line-clamp-3">
                     {t(`logistics.gallery.${item.id}.description`)}
                   </p>
                 </div>

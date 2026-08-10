@@ -173,6 +173,7 @@ export default async function LocaleLayout({
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "@id": `${siteConfig.url}/#organization`,
+    description: `${siteConfig.description}`,
     name: siteConfig.name,
     alternateName: siteConfig.shortName,
     url: `${siteConfig.url}/${locale}`,

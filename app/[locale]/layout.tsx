@@ -7,6 +7,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Pageloader from "@/components/Pageloader";
 import "../globals.css";
 
 const poppins = Poppins({
@@ -216,6 +217,7 @@ export default async function LocaleLayout({
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
+          <Pageloader />
           <Navbar locale={locale as Locale} />
           <main className="bg-background min-h-screen">{children}</main>
           <Footer />

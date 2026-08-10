@@ -161,6 +161,7 @@ function NavLogo({
           compact ? "h-14 w-14" : "h-20 w-20"
         }`}
         priority
+        fetchPriority="high"
       />
       <span className="flex min-w-0 flex-col leading-tight">
         <span

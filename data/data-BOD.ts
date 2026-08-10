@@ -3,18 +3,18 @@ export const modalData = [
     id: 1,
     key: "rudy",
     name: "Rudy Gunawan",
-    image: "/Founders/R.png",
+    image: "/founders/R.png",
   },
   {
     id: 2,
     key: "megawati",
     name: "Megawati Hamid",
-    image: "/Founders/M.png",
+    image: "/founders/M.png",
   },
   {
     id: 3,
     key: "suryo",
     name: "Suryo Wijoyo",
-    image: "/Founders/S.png",
+    image: "/founders/S.png",
   },
 ];

@@ -6,6 +6,7 @@ export type ActivityStatic = {
   images?: string[];
   contentKey: string;
   isNew?: boolean;
+  updatedAt: string;
 };
 
 /** Shape lengkap setelah digabung dengan terjemahan */
@@ -23,6 +24,7 @@ export const activitiesData: ActivityStatic[] = [
     slug: "dinner-celebrate",
     image: "/images/ruang-in/kegiatan/Top-Performance-2024/1.jpg",
     contentKey: "dinner_celebrate_2025",
+    updatedAt: "2025-01-30",
     images: [
       "/images/ruang-in/kegiatan/Top-Performance-2024/1.jpg",
       "/images/ruang-in/kegiatan/Top-Performance-2024/2.jpg",
@@ -36,6 +38,7 @@ export const activitiesData: ActivityStatic[] = [
     slug: "buka-puasa-bersama",
     image: "/images/ruang-in/kegiatan/BUKA PUASA BERSAMA RAMADHAN/1.jpg",
     contentKey: "buka_puasa_2025",
+    updatedAt: "2025-03-18",
     images: [
       "/images/ruang-in/kegiatan/BUKA PUASA BERSAMA RAMADHAN/1.jpg",
       "/images/ruang-in/kegiatan/BUKA PUASA BERSAMA RAMADHAN/2.jpg",
@@ -49,6 +52,7 @@ export const activitiesData: ActivityStatic[] = [
     slug: "training-employed-2025",
     image: "/images/ruang-in/kegiatan/Traning/IMG_2166.JPEG",
     contentKey: "training_employed_2025",
+    updatedAt: "2025-08-09",
     images: [
       "/images/ruang-in/kegiatan/Traning/IMG_2166.JPEG",
       "/images/ruang-in/kegiatan/Traning/IMG_2319.JPEG",
@@ -61,6 +65,7 @@ export const activitiesData: ActivityStatic[] = [
     slug: "annual-celebrate-2026",
     image: "/images/ruang-in/kegiatan/Celebrate_12_Januari_2026/1.JPG",
     contentKey: "annual_celebrate_2026",
+    updatedAt: "2026-12-01",
     images: [
       "/images/ruang-in/kegiatan/Celebrate_12_Januari_2026/1.JPG",
       "/images/ruang-in/kegiatan/Celebrate_12_Januari_2026/2.JPG",
@@ -75,6 +80,7 @@ export const activitiesData: ActivityStatic[] = [
     slug: "traning-sales-2026",
     image: "/images/ruang-in/kegiatan/Growing/1.jpeg",
     contentKey: "traning_sales_2026",
+    updatedAt: "2026-02-07",
     images: [
       "/images/ruang-in/kegiatan/Growing/1.jpeg",
       "/images/ruang-in/kegiatan/Growing/2.jpeg",
@@ -91,6 +97,7 @@ export const activitiesData: ActivityStatic[] = [
     slug: "goes-to-bangkok",
     image: "/images/ruang-in/kegiatan/Goes-to-Bangkok/001.jpeg",
     contentKey: "Bangkok_2025",
+    updatedAt: "2025-04-30",
     images: [
       "/images/ruang-in/kegiatan/Goes-to-Bangkok/001.jpeg",
       "/images/ruang-in/kegiatan/Goes-to-Bangkok/002.jpg",

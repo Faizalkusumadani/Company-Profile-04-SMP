@@ -6,6 +6,7 @@ export type NewsStatic = {
   images?: string[];
   contentKey: string;
   isNew?: boolean;
+  updatedAt: string;
 };
 
 /** Shape lengkap setelah digabung dengan terjemahan */
@@ -31,6 +32,7 @@ export const newsData: NewsStatic[] = [
       "/images/ruang-in/berita/Retailer Wavin 2026/005.jpeg",
     ],
     isNew: true,
+    updatedAt: "2026-06-04",
   },
 ];
 

@@ -3,8 +3,9 @@ import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { newsData } from "@/data/data-berita";
 import { activitiesData } from "@/data/data-kegiatan";
+import produkDetailList from "@/data/data-produk"; // default export, tanpa kurung kurawal
 
-const baseUrl = "https://sinergimandiriperkasa.co.id/";
+const baseUrl = "https://sinergimandiriperkasa.co.id"; // tanpa trailing slash
 const SITE_LAST_UPDATED = new Date("2026-08-01");
 
 const routes: {
@@ -39,7 +40,7 @@ const routes: {
     priority: 0.6,
     changeFrequency: "monthly",
   },
-  { path: "/produk", priority: 0.9, changeFrequency: "weekly" },
+  { path: "/produk", priority: 0.9, changeFrequency: "weekly" }, // halaman listing produk
   { path: "/ruang-informasi/berita", priority: 0.8, changeFrequency: "weekly" },
   {
     path: "/ruang-informasi/kegiatan",
@@ -57,19 +58,18 @@ type DynamicItem = {
   image: string;
 };
 
-// Helper generik: bikin entri sitemap untuk daftar item (berita/kegiatan) x semua locale
 function buildDynamicUrls(
   items: DynamicItem[],
-  segment: "berita" | "kegiatan",
+  basePath: string, // "/ruang-informasi/berita" | "/ruang-informasi/kegiatan" | "/produk"
 ): MetadataRoute.Sitemap {
   return routing.locales.flatMap((locale) =>
     items.map((item) => {
-      // Sertakan gambar galeri (kalau ada), fallback ke thumbnail utama.
       const galleryImages =
         item.images && item.images.length > 0 ? item.images : [item.image];
+      const path = `${basePath}/${item.slug}`;
 
       return {
-        url: `${baseUrl}/${locale}/ruang-informasi/${segment}/${item.slug}`,
+        url: `${baseUrl}/${locale}${path}`,
         lastModified: new Date(item.updatedAt),
         changeFrequency: "monthly" as const,
         priority: locale === routing.defaultLocale ? 0.5 : 0.4,
@@ -77,12 +77,9 @@ function buildDynamicUrls(
         alternates: {
           languages: {
             ...Object.fromEntries(
-              routing.locales.map((l) => [
-                l,
-                `${baseUrl}/${l}/ruang-informasi/${segment}/${item.slug}`,
-              ]),
+              routing.locales.map((l) => [l, `${baseUrl}/${l}${path}`]),
             ),
-            "x-default": `${baseUrl}/${routing.defaultLocale}/ruang-informasi/${segment}/${item.slug}`,
+            "x-default": `${baseUrl}/${routing.defaultLocale}${path}`,
           },
         },
       };
@@ -111,8 +108,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   );
 
-  const beritaUrls = buildDynamicUrls(newsData, "berita");
-  const kegiatanUrls = buildDynamicUrls(activitiesData, "kegiatan");
+  const beritaUrls = buildDynamicUrls(newsData, "/ruang-informasi/berita");
+  const kegiatanUrls = buildDynamicUrls(
+    activitiesData,
+    "/ruang-informasi/kegiatan",
+  );
 
-  return [...staticUrls, ...kegiatanUrls, ...beritaUrls];
+  // pakai SITE_LAST_UPDATED sebagai fallback tanggal.
+  const produkUrls = buildDynamicUrls(
+    produkDetailList.map((p) => ({
+      slug: p.slug,
+      updatedAt: SITE_LAST_UPDATED.toISOString(),
+      image: p.image,
+      images: p.gallery,
+    })),
+    "/produk",
+  );
+
+  return [...staticUrls, ...kegiatanUrls, ...beritaUrls, ...produkUrls];
 }

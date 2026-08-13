@@ -168,7 +168,7 @@ export default function Home() {
                   height={1150}
                   priority
                   quality={75}
-                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 560px"
+                  sizes="(max-width: 640px) 70vw, (max-width: 1024px) 35vw, 440px"
                   className="w-full h-full z-10 object-contain mask-[linear-gradient(to_bottom,black_70%,transparent_100%)]"
                   alt="Tim PT Sinergi Mandiri Perkasa"
                 />
@@ -341,7 +341,7 @@ export default function Home() {
                   width={900}
                   height={1150}
                   quality={70}
-                  sizes="(max-width: 1024px) 90vw, 40vw"
+                  sizes="(max-width: 1024px) 70vw, 31vw"
                   className="w-full h-full z-10 object-contain mask-[linear-gradient(to_bottom,black_70%,transparent_100%)]"
                   alt="Produk PT Mega Adhitama Sejati"
                 />

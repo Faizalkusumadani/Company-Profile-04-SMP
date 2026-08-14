@@ -86,7 +86,7 @@ export default function PageLoader() {
             width={120}
             height={80}
             style={{ objectFit: "contain" }}
-            priority
+            fetchPriority="high"
           />
           <span
             style={{

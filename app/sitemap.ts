@@ -3,9 +3,9 @@ import type { MetadataRoute } from "next";
 import { routing } from "@/i18n/routing";
 import { newsData } from "@/data/data-berita";
 import { activitiesData } from "@/data/data-kegiatan";
-import produkDetailList from "@/data/data-produk"; // default export, tanpa kurung kurawal
+import produkDetailList from "@/data/data-produk"; 
 
-const baseUrl = "https://sinergimandiriperkasa.co.id"; // tanpa trailing slash
+const baseUrl = "https://sinergimandiriperkasa.co.id"; 
 const SITE_LAST_UPDATED = new Date("2026-08-01");
 
 const routes: {

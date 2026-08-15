@@ -1,13 +1,8 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "next/image";
-import {
-  motion,
-  AnimatePresence,
-  useReducedMotion,
-  type Transition,
-} from "framer-motion";
+import { motion, useReducedMotion, type Transition } from "framer-motion";
 import { IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 
 interface PhotoGalleryProps {
@@ -16,21 +11,9 @@ interface PhotoGalleryProps {
   autoplayDelay?: number;
 }
 
-const imageTransition: Transition = {
-  duration: 0.4,
+const CROSSFADE: Transition = {
+  duration: 0.5,
   ease: [0.25, 0.46, 0.45, 0.94],
-};
-
-const slideVariants = {
-  enter: (direction: number) => ({
-    opacity: 0,
-    x: direction > 0 ? 24 : -24,
-  }),
-  center: { opacity: 1, x: 0 },
-  exit: (direction: number) => ({
-    opacity: 0,
-    x: direction > 0 ? -24 : 24,
-  }),
 };
 
 export default function PhotoGallery({
@@ -38,21 +21,18 @@ export default function PhotoGallery({
   alt,
   autoplayDelay = 5000,
 }: PhotoGalleryProps) {
-  const [[current, direction], setCurrent] = useState<[number, number]>([0, 0]);
+  const [current, setCurrent] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const total = images.length;
   const hasMultiple = total > 1;
   const shouldReduceMotion = useReducedMotion();
 
   const goTo = useCallback(
-    (index: number, dir: number) => {
-      setCurrent([(index + total) % total, dir]);
-    },
+    (index: number) => setCurrent((index + total) % total),
     [total],
   );
-
-  const goPrev = useCallback(() => goTo(current - 1, -1), [current, goTo]);
-  const goNext = useCallback(() => goTo(current + 1, 1), [current, goTo]);
+  const goPrev = useCallback(() => goTo(current - 1), [current, goTo]);
+  const goNext = useCallback(() => goTo(current + 1), [current, goTo]);
 
   // ── Autoplay: berhenti saat hover, fokus keyboard, atau reduced-motion ──
   useEffect(() => {
@@ -63,6 +43,18 @@ export default function PhotoGallery({
     return () => clearInterval(timer);
   }, [hasMultiple, isPaused, shouldReduceMotion, autoplayDelay, goNext]);
 
+  // ── Prioritaskan slide aktif + tetangga kiri/kanan agar tidak ada jeda
+  //    loading saat crossfade (semua gambar sudah ter-mount, ini hanya
+  //    menaikkan fetch priority-nya) ──
+  const priorityIndexes = useMemo(() => {
+    if (!hasMultiple) return new Set([0]);
+    return new Set([
+      current,
+      (current - 1 + total) % total,
+      (current + 1) % total,
+    ]);
+  }, [current, total, hasMultiple]);
+
   return (
     <div
       onMouseEnter={() => setIsPaused(true)}
@@ -72,27 +64,32 @@ export default function PhotoGallery({
     >
       {/* ── Foto Utama ── */}
       <div className="group relative h-75 lg:h-160 rounded-lg overflow-hidden bg-gray-100">
-        <AnimatePresence initial={false} custom={direction} mode="wait">
+        {/*
+          Semua gambar tetap ter-mount & bertumpuk (absolute inset-0); yang
+          dianimasikan hanya opacity-nya. Ini membuat transisi benar-benar
+          overlap (crossfade) alih-alih exit-lalu-enter seperti sebelumnya,
+          sehingga bg-gray-100 di baliknya tidak pernah sempat terlihat.
+        */}
+        {images.map((src, i) => (
           <motion.div
-            key={current}
-            custom={direction}
-            variants={slideVariants}
-            initial="enter"
-            animate="center"
-            exit="exit"
-            transition={imageTransition}
+            key={src}
             className="absolute inset-0"
+            initial={false}
+            animate={{ opacity: i === current ? 1 : 0 }}
+            transition={shouldReduceMotion ? { duration: 0 } : CROSSFADE}
+            style={{ zIndex: i === current ? 1 : 0 }}
+            aria-hidden={i === current ? undefined : true}
           >
             <Image
-              src={images[current]}
-              alt={alt}
+              src={src}
+              alt={i === current ? alt : ""}
               fill
               sizes="(max-width: 1024px) 100vw, 750px"
               className="object-cover"
-              priority={current === 0}
+              priority={priorityIndexes.has(i)}
             />
           </motion.div>
-        </AnimatePresence>
+        ))}
 
         {hasMultiple && (
           <>
@@ -138,7 +135,7 @@ export default function PhotoGallery({
             <button
               key={src}
               type="button"
-              onClick={() => goTo(i, i > current ? 1 : -1)}
+              onClick={() => goTo(i)}
               aria-label={`Lihat foto ${i + 1} dari ${total}`}
               aria-current={i === current ? "true" : undefined}
               className={`relative shrink-0 w-24 h-16 sm:w-35 sm:h-24 rounded-md overflow-hidden transition-all focus-visible:outline-solid focus-visible:outline-2 focus-visible:outline-mas-red focus-visible:outline-offset-2 ${

@@ -18,22 +18,22 @@ export default async function Footer() {
         {/* CONNECT WITH US */}
         <div>
           {/* Heading menggunakan smp-blue */}
-          <h3 className="text-lg sm:text-xl font-bold uppercase mb-6 text-foreground">
+          <h3 className="text-lg sm:text-xl font-bold uppercase mb-6 text-smp-blue">
             {t("footer.header_footer")}
           </h3>
           <div className="relative pb-6">
             <Image
               src="/logo/logo-smp.png"
-              width={160}
-              height={160}
+              width={140}
+              height={140}
               quality={75}
-              sizes="160px"
+              sizes="140px"
               alt="Logo Sinergi"
               className="object-contain"
               loading="eager"
-              style={{ width: "160px", height: "auto" }}
+              style={{ width: "140px", height: "auto" }}
             />
-            <h3 className="text-lg sm:text-xl font-bold text-foreground/70">
+            <h3 className="text-base sm:text-lg font-bold text-foreground/70">
               Sinergi Mandiri Perkasa
             </h3>
           </div>
@@ -69,7 +69,7 @@ export default async function Footer() {
         {/* HEAD OFFICE */}
         <div className="mt-12 md:mt-0 ">
           {/* Heading menggunakan smp-blue */}
-          <h3 className="text-lg sm:text-xl font-bold mb-6 text-foreground">
+          <h3 className="text-lg sm:text-xl font-bold mb-6 text-smp-blue">
             {t("footer.header_footer_01")}
           </h3>
           <address className="not-italic space-y-6 text-base text-foreground/70">

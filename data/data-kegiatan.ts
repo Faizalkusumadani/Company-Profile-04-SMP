@@ -21,6 +21,20 @@ export type Activity = ActivityStatic & {
 export const activitiesData: ActivityStatic[] = [
   {
     id: "1",
+    slug: "annual-gathering-2023",
+    image: "/images/ruang-in/kegiatan/Annual-Gathering-2023/0001.jpg",
+    contentKey: "annual_gathering_2023",
+    updatedAt: "2023-12-22",
+    images: [
+      "/images/ruang-in/kegiatan/Annual-Gathering-2023/0001.jpg",
+      "/images/ruang-in/kegiatan/Annual-Gathering-2023/0002.jpg",
+      "/images/ruang-in/kegiatan/Annual-Gathering-2023/0003.jpg",
+      "/images/ruang-in/kegiatan/Annual-Gathering-2023/0004.jpg",
+      "/images/ruang-in/kegiatan/Annual-Gathering-2023/0005.jpg",
+    ],
+  },
+  {
+    id: "2",
     slug: "dinner-celebrate",
     image: "/images/ruang-in/kegiatan/Top-Performance-2024/1.jpg",
     contentKey: "dinner_celebrate_2025",
@@ -34,7 +48,7 @@ export const activitiesData: ActivityStatic[] = [
     ],
   },
   {
-    id: "2",
+    id: "3",
     slug: "buka-puasa-bersama",
     image: "/images/ruang-in/kegiatan/BUKA PUASA BERSAMA RAMADHAN/1.jpg",
     contentKey: "buka_puasa_2025",
@@ -48,7 +62,7 @@ export const activitiesData: ActivityStatic[] = [
     ],
   },
   {
-    id: "3",
+    id: "4",
     slug: "training-employed-2025",
     image: "/images/ruang-in/kegiatan/Traning/IMG_2166.JPEG",
     contentKey: "training_employed_2025",
@@ -61,7 +75,7 @@ export const activitiesData: ActivityStatic[] = [
     ],
   },
   {
-    id: "4",
+    id: "5",
     slug: "annual-celebrate-2026",
     image: "/images/ruang-in/kegiatan/Celebrate_12_Januari_2026/1.JPG",
     contentKey: "annual_celebrate_2026",
@@ -76,7 +90,7 @@ export const activitiesData: ActivityStatic[] = [
     isNew: true,
   },
   {
-    id: "5",
+    id: "6",
     slug: "traning-sales-2026",
     image: "/images/ruang-in/kegiatan/Growing/001.jpg",
     contentKey: "traning_sales_2026",
@@ -93,7 +107,7 @@ export const activitiesData: ActivityStatic[] = [
     isNew: true,
   },
   {
-    id: "6",
+    id: "7",
     slug: "goes-to-bangkok",
     image: "/images/ruang-in/kegiatan/Goes-to-Bangkok/001.jpeg",
     contentKey: "Bangkok_2025",

@@ -97,7 +97,7 @@ export default async function Nilai_NilaiPage() {
         </div>
         <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-15 md:py-24 space-y-24 md:space-y-36">
           <div className="space-y-6 mb-12">
-            <h2 className="text-2xl sm:text-4xl font-bold text-foreground md:text-5xl">
+            <h2 className="text-2xl sm:text-4xl font-semibold text-foreground md:text-5xl">
               {t("corevalues.heading")}
             </h2>
             <p className="text-smp-muted text-sm md:text-base leading-relaxed font-normal">

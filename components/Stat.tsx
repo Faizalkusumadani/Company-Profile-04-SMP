@@ -62,7 +62,7 @@ export default function StatItem({ number, label }: StatItemProps) {
 
   return (
     <div ref={elementRef} className="text-center space-y-2 py-4 px-4 sm:px-6">
-      <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground">
+      <div className="text-2xl sm:text-3xl md:text-4xl font-semibold text-foreground">
         {count}
         {suffix}
       </div>

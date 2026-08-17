@@ -54,7 +54,7 @@ export default function BrandMarquee({
     <section className="py-16 bg-gray-50 border-y border-gray-100 overflow-hidden">
       {title && (
         <div className="max-w-7xl mx-auto px-4 mb-12 text-center">
-          <h2 className="text-xs md:text-sm font-semibold tracking-widest text-gray-500 uppercase">
+          <h2 className="text-xs md:text-sm font-semibold  tracking-widest text-gray-500 uppercase">
             {title}
           </h2>
         </div>

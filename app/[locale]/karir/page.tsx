@@ -57,10 +57,10 @@ export default async function KarirPage() {
               <p className="text-sm font-medium uppercase tracking-widest text-smp-orange">
                 {t("karir.tag")}
               </p>
-              <h1 className="mt-4 text-3xl md:text-5xl font-bold text-smp-dark tracking-tight">
+              <h1 className="mt-4 text-3xl md:text-5xl font-semibold text-foreground tracking-tight">
                 {t("karir.header")}
               </h1>
-              <p className="mt-5 text-gray-500 leading-relaxed max-w-lg">
+              <p className="mt-5 text-smp-muted leading-relaxed max-w-lg">
                 {t("karir.desc")}
               </p>
             </div>

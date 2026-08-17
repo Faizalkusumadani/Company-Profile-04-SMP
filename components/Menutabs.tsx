@@ -76,10 +76,10 @@ export default function ProductCatalog() {
           HEADER — judul halaman produk
       ============================================================ */}
       <div className="text-center mb-16 flex flex-col items-center gap-4 md:gap-6">
-        <span className="text-smp-orange uppercase font-light tracking-[0.25em] text-xs sm:text-sm block">
+        <span className="text-smp-orange uppercase font-medium tracking-[0.25em] text-xs sm:text-sm block">
           {t("product.tag_pages")}
         </span>
-        <h2 className="text-3xl md:text-5xl font-bold text-foreground mb-4 tracking-tight">
+        <h2 className="text-3xl md:text-5xl font-semibold text-foreground mb-4 tracking-tight">
           {t("product.header_pages")}
         </h2>
         <p className="text-smp-muted text-sm md:text-base">

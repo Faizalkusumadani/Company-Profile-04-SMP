@@ -16,7 +16,7 @@ const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   display: "swap",
-  weight: ["400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 // ─── Site Config ──────────────────────────────────────────────────────────────

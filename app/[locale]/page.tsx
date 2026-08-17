@@ -272,7 +272,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="min-w-0">
-                    <h3 className="text-base sm:text-lg font-bold text-white leading-snug mb-1.5 transition-colors duration-300 group-hover:text-smp-blue">
+                    <h3 className="text-base sm:text-lg font-semibold text-white leading-snug mb-1.5 transition-colors duration-300 group-hover:text-smp-blue">
                       {t(`home_features.${feature.key}.title`)}
                     </h3>
                     <p className="text-white/70 text-sm leading-relaxed">
@@ -367,7 +367,7 @@ export default function Home() {
                     </div>
 
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-lg sm:text-xl font-bold text-foreground mb-1.5 transition-colors duration-300 group-hover:text-smp-blue">
+                      <h3 className="text-lg sm:text-xl font-semibold text-foreground mb-1.5 transition-colors duration-300 group-hover:text-smp-blue">
                         {t(`home_product.${cat.key}.title`)}
                       </h3>
                       <p className="text-smp-muted leading-relaxed text-sm sm:text-base">

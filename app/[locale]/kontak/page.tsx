@@ -92,7 +92,7 @@ export default async function KontakPage() {
           {/* ================= Lokasi Kami ================= */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="mt-4 text-3xl md:text-5xl font-bold text-foreground tracking-tight">
+              <h2 className="mt-4 text-3xl md:text-5xl font-semibold text-foreground tracking-tight">
                 {t("kontak.header")}
               </h2>
               <p className="mt-3 text-smp-muted max-w-5xl">
@@ -113,7 +113,7 @@ export default async function KontakPage() {
                         <p className="text-xs font-normal tracking-wide text-smp-muted hover:text-smp-blue">
                           {name}
                         </p>
-                        <p className="mt-0.5 text-base text-gray-800 leading-relaxed">
+                        <p className="mt-0.5 text-base text-foreground leading-relaxed">
                           {loc.value}
                         </p>
                       </div>
@@ -163,7 +163,7 @@ export default async function KontakPage() {
 
           {/* ================= Form Kontak ================= */}
           <div className="mb-4 space-y-6">
-            <h2 className="text-3xl md:text-5xl font-bold text-foreground tracking-tight">
+            <h2 className="text-3xl md:text-5xl font-semibold text-foreground tracking-tight">
               {t("kontak.hero_heading_01")} {t("kontak.hero_heading_02")}
             </h2>
             <p className="mt-3 text-smp-muted leading-relaxed max-w-sm">

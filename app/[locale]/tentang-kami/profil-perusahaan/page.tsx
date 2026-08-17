@@ -73,10 +73,10 @@ export default async function ProfilPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 border-b border-smp-border pb-16">
             {/* Kiri: Judul & Subtitle */}
             <div className="lg:col-span-5 space-y-3">
-              <span className="text-smp-orange uppercase font-light tracking-[0.25em] text-xs sm:text-sm block">
+              <span className="text-smp-orange uppercase font-medium tracking-[0.25em] text-xs sm:text-sm block">
                 {t("about.tag_company")}
               </span>
-              <h2 className="text-3xl md:text-4xl font-light tracking-tight text-foreground leading-tight">
+              <h2 className="text-3xl md:text-4xl font-normal tracking-tight text-foreground leading-tight">
                 {t("about.header_01")} <br />
                 <span className="font-semibold text-foreground">
                   {t("about.header_02")}
@@ -137,7 +137,7 @@ export default async function ProfilPage() {
             {/* Box Kanan: Rincian Sektor Bisnis Formal */}
             <div className="lg:col-span-2 text-foreground p-8 rounded-xl  flex flex-col justify-between">
               <div>
-                <h3 className=" flex items-center gap-2 text-smp-orange uppercase font-light tracking-[0.25em] text-xs sm:text-sm mb-8">
+                <h3 className=" flex items-center gap-2 text-smp-orange uppercase font-medium tracking-[0.25em] text-xs sm:text-sm mb-8">
                   {t("about.tag_struktural")}
                 </h3>
 
@@ -178,10 +178,10 @@ export default async function ProfilPage() {
         <section id="smp-office" className="scroll-mt-28">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 border-b border-gray-200 pb-6">
             <div className="space-y-2">
-              <span className="text-smp-orange uppercase font-light tracking-[0.25em] text-xs sm:text-sm block">
+              <span className="text-smp-orange uppercase font-medium tracking-[0.25em] text-xs sm:text-sm block">
                 {t("about.tag_office")}
               </span>
-              <h2 className="text-3xl md:text-4xl font-light tracking-tight text-foreground">
+              <h2 className="text-3xl md:text-4xl font-normal tracking-tight text-foreground">
                 Sinergi Mandiri Perkasa{" "}
                 <span className="font-semibold text-smp-dark">
                   {" "}

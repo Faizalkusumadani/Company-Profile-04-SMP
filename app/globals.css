@@ -4,12 +4,6 @@
    1. COLOR & GRADIENT SYSTEM (CORPORATE ELEGANT)
    ───────────────────────────────────────────────────────────── */
 :root {
-  /* Paksa browser selalu pakai skema light, terlepas dari setting
-     device. Situs ini didesain light-only — banyak komponen pakai
-     warna solid (bg-white, bg-zinc-50, text-white) yang tidak
-     ikut bereaksi terhadap prefers-color-scheme, jadi dark mode
-     parsial hanya membuat teks tak terbaca (mis. text-foreground
-     jadi putih di atas section bg-white/bg-zinc-50). */
   color-scheme: light;
 
   /* Surface & Text (Light Mode) */
@@ -70,9 +64,6 @@
    3. BASE STYLES
    ───────────────────────────────────────────────────────────── */
 body {
-  background-color: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-poppins), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

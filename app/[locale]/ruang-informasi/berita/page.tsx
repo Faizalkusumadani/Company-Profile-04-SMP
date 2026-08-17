@@ -72,7 +72,7 @@ export default async function BeritaPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main Carousel */}
             <div className="order-2 lg:order-1 lg:col-span-2">
-              <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="rounded-lg shadow-lg overflow-hidden">
                 <Carousel slides={allNews} />
               </div>
             </div>
@@ -125,7 +125,7 @@ export default async function BeritaPage() {
 
           {/* ── Gallery Berita ── */}
           <div>
-            <h2 className="text-gray-700 text-2xl lg:text-4xl font-semibold tracking-tight">
+            <h2 className="text-foreground text-2xl lg:text-4xl font-semibold tracking-tight">
               {t("Roominformation.news")}{" "}
               <span className="text-mas-red">
                 {t("Roominformation.exclusive")}

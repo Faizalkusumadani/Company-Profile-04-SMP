@@ -18,7 +18,7 @@ export default async function Footer() {
         {/* CONNECT WITH US */}
         <div>
           {/* Heading menggunakan smp-blue */}
-          <h3 className="text-lg sm:text-xl font-bold uppercase mb-6 text-smp-blue">
+          <h3 className="text-lg sm:text-xl font-semibold uppercase mb-6 text-smp-blue">
             {t("footer.header_footer")}
           </h3>
           <div className="relative pb-6">
@@ -33,7 +33,7 @@ export default async function Footer() {
               loading="eager"
               style={{ width: "140px", height: "auto" }}
             />
-            <h3 className="text-base sm:text-lg font-bold text-foreground/70">
+            <h3 className="text-base sm:text-lg font-semibold text-foreground/70">
               Sinergi Mandiri Perkasa
             </h3>
           </div>
@@ -69,7 +69,7 @@ export default async function Footer() {
         {/* HEAD OFFICE */}
         <div className="mt-12 md:mt-0 ">
           {/* Heading menggunakan smp-blue */}
-          <h3 className="text-lg sm:text-xl font-bold mb-6 text-smp-blue">
+          <h3 className="text-lg sm:text-xl font-semibold mb-6 text-smp-blue">
             {t("footer.header_footer_01")}
           </h3>
           <address className="not-italic space-y-6 text-base text-foreground/70">
@@ -172,7 +172,7 @@ export default async function Footer() {
         />
 
         {/* Ping dot */}
-        <span className="absolute  -top-2 -right-2 w-6 h-6 text-xs font-bold text-white bg-red-600 rounded-full flex items-center justify-center">
+        <span className="absolute  -top-2 -right-2 w-6 h-6 text-xs font-semibold text-white bg-red-600 rounded-full flex items-center justify-center">
           1
         </span>
       </a>

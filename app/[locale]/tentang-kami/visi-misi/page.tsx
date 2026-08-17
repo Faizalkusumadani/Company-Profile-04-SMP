@@ -56,7 +56,7 @@ export default async function Visi_MisiPage() {
                   <div className="flex items-center justify-center w-14 h-14 rounded-full bg-smp-orange/10 shrink-0">
                     <Icon className="w-7 h-7 text-smp-blue" />
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-reddmas-dark">
+                  <h2 className="text-3xl md:text-4xl font-semibold text-foreground">
                     {t(`visiMisi.${id}.title`)}
                   </h2>
                 </div>

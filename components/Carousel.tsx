@@ -19,15 +19,15 @@ interface SlideData {
 }
 
 const slides: SlideData[] = [
-  { id: 1, image: "/carousel/Banner-Carousel-01.png" },
-  { id: 2, image: "/carousel/Banner-Carousel-02.png", ctaHref: "/produk" },
+  { id: 1, image: "/carousel/Banner-Carousel-01.webp" },
+  { id: 2, image: "/carousel/Banner-Carousel-02.webp", ctaHref: "/produk" },
   {
     id: 3,
-    image: "/carousel/Banner-Carousel-03.png",
+    image: "/carousel/Banner-Carousel-03.webp",
     ctaHref: "/kontak",
   },
-  { id: 4, image: "/carousel/Banner-Carousel-04.png" },
-  { id: 5, image: "/carousel/Banner-Carousel-05.png" },
+  { id: 4, image: "/carousel/Banner-Carousel-04.webp" },
+  { id: 5, image: "/carousel/Banner-Carousel-05.webp" },
 ];
 
 const SLIDE_DURATION = 7000; // ms

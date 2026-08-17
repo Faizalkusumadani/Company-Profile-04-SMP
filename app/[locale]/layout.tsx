@@ -182,7 +182,6 @@ export default async function LocaleLayout({
     logo: `${siteConfig.url}/logo/logo-smp.png`,
     image: `${siteConfig.url}${siteConfig.ogImage}`,
     telephone: "+62-21-550-3019",
-    // TODO: pastikan domain email ini benar & aktif — beda dengan domain situs
     email: "sales@smp-merahputih.com",
     priceRange: "$$",
     address: {
@@ -217,13 +216,6 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        {/*
-          Consent Mode v2 — WAJIB dimuat paling awal (beforeInteractive),
-          sebelum GoogleAnalytics render. Default semua storage "denied"
-          kecuali user sebelumnya sudah menyimpan pilihan "granted" di
-          localStorage (supaya returning visitor tidak lihat banner lagi
-          dan langsung ke-restore consent-nya).
-        */}
         <Script id="consent-default" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];

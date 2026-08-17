@@ -83,7 +83,7 @@ export default function PageLoader() {
           <Image
             src="/logo/loading-screen.png"
             alt="SMP Logo"
-            width={160}
+            width={140}
             height={80}
             style={{ objectFit: "contain" }}
             fetchPriority="high"

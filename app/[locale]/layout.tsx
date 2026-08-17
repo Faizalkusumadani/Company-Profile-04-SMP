@@ -5,16 +5,18 @@ import { routing, type Locale } from "@/i18n/routing";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Pageloader from "@/components/Pageloader";
+import CookieConsent from "@/components/Cookie";
 import "../globals.css";
 
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
   display: "swap",
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 // ─── Site Config ──────────────────────────────────────────────────────────────
@@ -215,6 +217,29 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/*
+          Consent Mode v2 — WAJIB dimuat paling awal (beforeInteractive),
+          sebelum GoogleAnalytics render. Default semua storage "denied"
+          kecuali user sebelumnya sudah menyimpan pilihan "granted" di
+          localStorage (supaya returning visitor tidak lihat banner lagi
+          dan langsung ke-restore consent-nya).
+        */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            var stored = null;
+            try { stored = localStorage.getItem("cookie_consent"); } catch (e) {}
+            var granted = stored === "granted";
+            gtag('consent', 'default', {
+              ad_storage: granted ? 'granted' : 'denied',
+              ad_user_data: granted ? 'granted' : 'denied',
+              ad_personalization: granted ? 'granted' : 'denied',
+              analytics_storage: granted ? 'granted' : 'denied',
+              wait_for_update: 500
+            });
+          `}
+        </Script>
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
@@ -224,11 +249,13 @@ export default async function LocaleLayout({
             {children}
           </main>
           <Footer />
+          <CookieConsent />
         </NextIntlClientProvider>
-        {process.env.NEXT_PUBLIC_GA_ID && (
+      </body>
+      {process.env.NEXT_PUBLIC_GA_ID &&
+        process.env.NODE_ENV === "production" && (
           <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />
         )}
-      </body>
     </html>
   );
 }

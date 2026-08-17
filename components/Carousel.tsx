@@ -111,7 +111,7 @@ export default function Carousel() {
         <motion.div
           key={slide.id}
           className="absolute inset-0"
-          initial={{ opacity: 0, scale: 1.04 }}
+          initial={current === 0 ? false : { opacity: 0, scale: 1.04 }}
           animate={{
             opacity: 1,
             scale: 1,
@@ -127,8 +127,8 @@ export default function Carousel() {
             alt=""
             fill
             priority={current === 0}
+            fetchPriority={current === 0 ? "high" : "auto"}
             className="object-cover"
-            loading="eager"
             sizes="100vw"
           />
           {/* Gradasi terarah: gelap di kiri-bawah, transparan di kanan-atas */}

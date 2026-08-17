@@ -61,15 +61,7 @@
 }
 
 /* ─────────────────────────────────────────────────────────────
-   3. BASE STYLES
-   ───────────────────────────────────────────────────────────── */
-body {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* ─────────────────────────────────────────────────────────────
-   4. UTILITIES & HELPER CLASSES
+   3. UTILITIES & HELPER CLASSES
    ───────────────────────────────────────────────────────────── */
 @layer utilities {
   .scrollbar-hide {

@@ -42,7 +42,7 @@ export default function CookieConsent() {
       aria-live="polite"
       aria-label="Persetujuan cookie"
       style={{ display: "none" }}
-      className="fixed inset-x-0 bottom-0 z-[9998] flex-col gap-3 border-t border-zinc-200 bg-white p-4 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] md:flex-row md:items-center md:justify-between md:px-8"
+      className="fixed inset-x-0 bottom-0 z-9998 flex-col gap-3 border-t border-zinc-200 bg-white p-4 shadow-[0_-4px_16px_rgba(0,0,0,0.08)] md:flex-row md:items-center md:justify-between md:px-8"
     >
       <p className="text-sm text-zinc-600">
         Kami menggunakan cookie untuk analitik kunjungan situs guna meningkatkan

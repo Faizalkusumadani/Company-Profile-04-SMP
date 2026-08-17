@@ -86,6 +86,7 @@ export default function PageLoader() {
             width={140}
             height={80}
             style={{ objectFit: "contain" }}
+            loading="eager"
             fetchPriority="high"
           />
           <span
@@ -129,11 +130,11 @@ export default function PageLoader() {
           style={{
             fontFamily: "Poppins, sans-serif",
             fontSize: "0.75rem",
-            color: "#94a3b8",
+            color: "#64748b",
             marginTop: "-0.5rem",
           }}
         >
-          Memuat... 0%
+          Memuat.... 0%
         </p>
       </div>
     </div>

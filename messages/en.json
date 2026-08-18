@@ -199,6 +199,7 @@
     "error": "not found",
     "header-result": "Find your products here... ",
     "result-01": "Type something to start searching for products here",
+    "not-found": "Products for this category are not yet available",
     "specification": "Specification",
     "type": "Variant",
     "contact": "Contact",
@@ -530,6 +531,11 @@
       "phone": { "name": "Phone" },
       "company-profile": { "name": "Download Company Profile" }
     }
+  },
+  "cookie": {
+    "desc": "We use cookies for site traffic analytics to improve your experience. You can accept or decline the use of these non-essential cookies",
+    "cta-01": "Accept",
+    "cta-02": "Reject"
   },
   "footer": {
     "header_footer": "Connect With Us",

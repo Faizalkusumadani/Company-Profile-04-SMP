@@ -182,7 +182,7 @@ export default function ProductCatalog() {
                 <span className="inline-block text-[11px] sm:text-xs font-medium text-smp-blue mb-2 sm:mb-3">
                   {getCategoryLabel(t, product.category)}
                 </span>
-                <p className="text-sm text-slate-500 line-clamp-3">
+                <p className="text-sm text-smp-muted line-clamp-4">
                   {t(`product.${product.descKey}`)}
                 </p>
 
@@ -210,8 +210,8 @@ export default function ProductCatalog() {
             </div>
           ))
         ) : (
-          <div className="col-span-full text-center text-gray-400 py-10">
-            Produk untuk kategori ini belum tersedia.
+          <div className="col-span-full text-center text-smp-muted py-10">
+            {t("product.not-found")}
           </div>
         )}
       </div>

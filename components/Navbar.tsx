@@ -440,7 +440,7 @@ function DesktopNavbar({
           </ul>
           <span
             className={`h-5 w-px transition-colors duration-300 ${
-              isScrolled ? "bg-smp-dark/15" : "bg-white/15"
+              isScrolled ? "bg-smp-dark/75" : "bg-white/75"
             }`}
             aria-hidden="true"
           />

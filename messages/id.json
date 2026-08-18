@@ -200,6 +200,7 @@
     "error": "tidak di temukan",
     "header-result": "Temukan produk anda disini... ",
     "result-01": "ketik sesuatu untuk mulai mencari produk disini",
+    "not-found": " Produk untuk kategori ini belum tersedia",
     "specification": "Spesifikasi",
     "type": "Varian",
     "contact": "Kontak",
@@ -534,6 +535,11 @@
       "phone": { "name": "Telepon" },
       "company-profile": { "name": "Download Company Profile" }
     }
+  },
+  "cookie": {
+    "desc": "Kami menggunakan cookie untuk analitik kunjungan situs guna meningkatkan pengalaman Anda. Anda dapat menerima atau menolak penggunaan cookie non-esensial ini",
+    "cta-01": "Terima",
+    "cta-02": "Tolak"
   },
   "footer": {
     "header_footer": "Connect With Us",

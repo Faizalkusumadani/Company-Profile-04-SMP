@@ -203,6 +203,12 @@ export default async function LocaleLayout({
       { "@type": "AdministrativeArea", name: "Banten" },
       { "@type": "AdministrativeArea", name: "Jawa Barat" },
     ],
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:00",
+      closes: "16:30",
+    },
     sameAs: [
       "https://www.instagram.com/sinergi.mp?utm_source=qr&igsh=MTljOTdwc2p0NjdzYw==",
     ],
@@ -216,6 +222,8 @@ export default async function LocaleLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+      </head>
+      <body>
         <Script id="consent-default" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
@@ -232,8 +240,6 @@ export default async function LocaleLayout({
             });
           `}
         </Script>
-      </head>
-      <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Pageloader />
           <Navbar locale={locale as Locale} />

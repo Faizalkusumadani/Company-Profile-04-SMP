@@ -533,7 +533,7 @@
     }
   },
   "cookie": {
-    "desc": "We use cookies for site traffic analytics to improve your experience. You can accept or decline the use of these non-essential cookies",
+    "desc": "We use cookies and similar technologies to run this website and help us understand how you use it",
     "cta-01": "Accept",
     "cta-02": "Reject"
   },

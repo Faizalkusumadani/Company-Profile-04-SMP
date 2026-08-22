@@ -167,7 +167,7 @@ function NavLogo({
         <span
           className={`whitespace-nowrap font-medium transition-colors duration-300 ${
             compact ? "text-sm" : "text-sm sm:text-base"
-          } ${isScrolled ? "text-smp-dark" : "text-white"}`}
+          } ${isScrolled ? "text-foreground" : "text-white"}`}
         >
           Sinergi
         </span>
@@ -223,7 +223,7 @@ function DesktopDropdown({
               className={`flex items-start gap-3 rounded-xl px-3.5 py-3 text-sm transition-colors ${
                 active
                   ? "bg-gray-100 text-smp-blue"
-                  : "text-smp-dark hover:bg-gray-100 hover:text-smp-blue"
+                  : "text-foreground hover:bg-gray-100 hover:text-smp-blue"
               }`}
             >
               {item.icon && (
@@ -231,7 +231,7 @@ function DesktopDropdown({
                   className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-lg transition-colors ${
                     active
                       ? "bg-smp-blue/10 text-smp-blue"
-                      : "bg-gray-100 text-smp-dark/60"
+                      : "bg-gray-100 text-foreground/60"
                   }`}
                 >
                   {item.icon}
@@ -245,7 +245,7 @@ function DesktopDropdown({
                   )}
                 </span>
                 {item.descKey && (
-                  <span className="mt-0.5 block text-xs font-normal leading-snug text-smp-dark/45">
+                  <span className="mt-0.5 block text-xs font-normal leading-snug text-foreground/45">
                     {t(item.descKey)}
                   </span>
                 )}
@@ -341,7 +341,7 @@ function DesktopNavItem({
             active
               ? "text-smp-blue"
               : isScrolled
-                ? "text-smp-dark/75 group-hover:text-smp-blue"
+                ? "text-foreground/75 group-hover:text-smp-blue"
                 : "text-white/70 group-hover:text-smp-blue"
           }`}
         >
@@ -388,7 +388,7 @@ function DesktopNavItem({
           active
             ? "text-smp-blue"
             : isScrolled
-              ? "text-smp-dark/75 group-hover:text-smp-blue"
+              ? "text-foreground/75 group-hover:text-smp-blue"
               : "text-white/70 group-hover:text-smp-blue"
         }`}
       >
@@ -511,7 +511,7 @@ function MobileOverlay({
             <button
               onClick={onClose}
               aria-label="Close menu"
-              className="flex h-9 w-9 items-center justify-center rounded-lg text-smp-dark transition-colors hover:bg-gray-200 hover:text-smp-blue"
+              className="flex h-9 w-9 items-center justify-center rounded-lg text-foreground transition-colors hover:bg-gray-200 hover:text-smp-blue"
             >
               <svg
                 width="20"
@@ -546,13 +546,10 @@ function MobileOverlay({
                           className={`flex w-full items-center justify-between rounded-lg px-3 py-3.5 text-base font-normal transition-colors ${
                             active
                               ? "bg-gray-200 text-smp-blue"
-                              : "text-smp-dark hover:bg-gray-200 hover:text-smp-blue"
+                              : "text-foreground hover:bg-gray-200 hover:text-smp-blue"
                           }`}
                         >
                           <span className="flex items-center gap-2">
-                            {active && (
-                              <span className="h-1.5 w-1.5 rounded-full bg-smp-blue" />
-                            )}
                             {t(item.labelKey)}
                           </span>
                           <motion.svg
@@ -594,7 +591,7 @@ function MobileOverlay({
                                       className={`flex items-start gap-2.5 rounded-lg px-3 py-2.5 text-sm transition-colors ${
                                         childIsActive
                                           ? "text-smp-blue bg-white/8"
-                                          : "text-smp-dark/55 hover:bg-gray-200 hover:text-smp-blue"
+                                          : "text-foreground/55 hover:bg-gray-200 hover:text-smp-blue"
                                       }`}
                                     >
                                       {child.icon && (
@@ -602,7 +599,7 @@ function MobileOverlay({
                                           className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg transition-colors ${
                                             childIsActive
                                               ? "bg-smp-blue/10 text-smp-blue"
-                                              : "bg-gray-100 text-smp-dark/50"
+                                              : "bg-gray-100 text-foreground/50"
                                           }`}
                                         >
                                           {child.icon}
@@ -613,7 +610,7 @@ function MobileOverlay({
                                           {t(child.labelKey)}
                                         </span>
                                         {child.descKey && (
-                                          <span className="mt-0.5 block text-xs font-normal leading-snug text-smp-dark/40">
+                                          <span className="mt-0.5 block text-xs font-normal leading-snug text-foreground/40">
                                             {t(child.descKey)}
                                           </span>
                                         )}
@@ -633,12 +630,9 @@ function MobileOverlay({
                         className={`flex items-center gap-2 rounded-lg px-3 py-3.5 text-base font-normal transition-colors ${
                           active
                             ? "bg-gray-200 text-smp-blue"
-                            : "text-smp-dark hover:bg-gray-200 hover:text-smp-blue"
+                            : "text-foreground hover:bg-gray-200 hover:text-smp-blue"
                         }`}
                       >
-                        {active && (
-                          <span className="h-1.5 w-1.5 rounded-full bg-smp-blue" />
-                        )}
                         {t(item.labelKey)}
                       </Link>
                     )}

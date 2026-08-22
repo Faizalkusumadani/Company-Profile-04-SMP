@@ -107,34 +107,40 @@ export default function Carousel() {
       onBlur={() => setIsPaused(false)}
     >
       {/* ─── Background image + gradient ─── */}
-      <AnimatePresence mode="sync">
-        <motion.div
-          key={slide.id}
-          className="absolute inset-0"
-          initial={current === 0 ? false : { opacity: 0, scale: 1.04 }}
-          animate={{
-            opacity: 1,
-            scale: 1,
-            transition: { duration: 1.2, ease: EASE },
-          }}
-          exit={{
-            opacity: 0,
-            transition: { duration: 0.8, ease: "easeInOut" },
-          }}
-        >
-          <Image
-            src={slide.image}
-            alt=""
-            fill
-            priority={current === 0}
-            fetchPriority={current === 0 ? "high" : "auto"}
-            className="object-cover"
-            sizes="100vw"
-          />
-          {/* Gradasi terarah: gelap di kiri-bawah, transparan di kanan-atas */}
-          <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/70 to-smp-orange/30" />
-        </motion.div>
-      </AnimatePresence>
+      <div className="absolute inset-0">
+        {slides.map((s, i) => {
+          const isActive = i === current;
+          return (
+            <motion.div
+              key={s.id}
+              className="absolute inset-0"
+              initial={false}
+              animate={{
+                opacity: isActive ? 1 : 0,
+                scale: isActive ? 1 : 1.04,
+              }}
+              transition={{
+                duration: isActive ? 1.2 : 0.8,
+                ease: isActive ? EASE : "easeInOut",
+              }}
+              style={{ zIndex: isActive ? 1 : 0, pointerEvents: "none" }}
+            >
+              <Image
+                src={s.image}
+                alt=""
+                fill
+                priority={i === 0}
+                fetchPriority={i === 0 ? "high" : "auto"}
+                loading={i === 0 ? undefined : "eager"}
+                className="object-cover"
+                sizes="100vw"
+              />
+              {/* Gradasi terarah: gelap di kiri-bawah, transparan di kanan-atas */}
+              <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/70 to-smp-orange/30" />
+            </motion.div>
+          );
+        })}
+      </div>
 
       {/* ─── Konten teks: bottom-left, container terkendali ─── */}
       <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col justify-end px-6 pb-24 sm:px-10 sm:pb-28 lg:px-16 lg:pb-32">

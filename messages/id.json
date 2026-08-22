@@ -536,10 +536,28 @@
       "company-profile": { "name": "Download Company Profile" }
     }
   },
-  "cookie": {
-    "desc": "Kami menggunakan cookie dan teknologi serupa untuk menjalankan situs web ini dan membantu kami memahami bagaimana Anda menggunakannya",
-    "cta-01": "Terima",
-    "cta-02": "Tolak"
+  "Cookies": {
+    "ariaLabel": "Pengaturan cookie",
+    "title": "Kami menggunakan cookie",
+    "description": "Kami menggunakan cookie untuk meningkatkan pengalaman kamu, menganalisis trafik, dan menampilkan konten yang relevan.",
+    "learnMore": "Pelajari lebih lanjut",
+    "managePreferences": "Atur preferensi",
+    "hidePreferences": "Sembunyikan preferensi",
+    "acceptAll": "Terima semua",
+    "rejectAll": "Tolak semua",
+    "savePreferences": "Simpan preferensi",
+    "necessary": {
+      "title": "Esensial",
+      "description": "Diperlukan agar situs berfungsi dengan baik. Selalu aktif."
+    },
+    "analytics": {
+      "title": "Analitik",
+      "description": "Membantu kami memahami cara pengunjung menggunakan situs."
+    },
+    "marketing": {
+      "title": "Pemasaran",
+      "description": "Digunakan untuk menampilkan iklan yang lebih relevan."
+    }
   },
   "footer": {
     "header_footer": "Connect With Us",

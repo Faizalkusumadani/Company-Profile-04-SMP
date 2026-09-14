@@ -150,7 +150,7 @@ export default async function KontakPage() {
             <div className="order-1 lg:order-2">
               <div className="relative aspect-4/5 w-full max-w-md mx-auto rounded-3xl overflow-hidden ">
                 <Image
-                  src="/images/cs-kontak-01.png"
+                  src="/images/cs-kontak-01.webp"
                   alt="Customer Service "
                   fill
                   className="object-contain mask-[linear-gradient(to_bottom,black_80%,transparent_100%)]"

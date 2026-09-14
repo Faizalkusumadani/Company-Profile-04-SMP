@@ -224,9 +224,7 @@ export default async function LocaleLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Pageloader />
           <Navbar locale={locale as Locale} />
-          <main className="bg-background min-h-screen scroll-smooth">
-            {children}
-          </main>
+          <main className="bg-background scroll-smooth">{children}</main>
           <Footer />
           <CookieConsent gaId={process.env.NEXT_PUBLIC_GA_ID} />
         </NextIntlClientProvider>

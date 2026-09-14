@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
@@ -30,7 +29,7 @@ const FaqItem = ({ faqKey, index }: { faqKey: string; index: number }) => {
             {String(index + 1).padStart(2, "0")}.
           </span>
           <span
-            className={`text-base sm:text-lg font-medium transition-colors duration-300 ${
+            className={`text-base sm:text-lg font-light transition-colors duration-300 ${
               isOpen
                 ? "text-smp-blue"
                 : "text-foreground group-hover:text-smp-blue"
@@ -115,15 +114,12 @@ export default function Home() {
               }}
               className="order-1 lg:order-1 space-y-4 sm:space-y-6"
             >
-              <div>
-                <span className="text-smp-orange uppercase font-medium tracking-[0.25em] text-xs sm:text-sm">
-                  {t("home_about.title")}
-                </span>
-              </div>
-
-              <h1 className="text-3xl sm:text-4xl lg:text-[60px] font-semibold text-foreground tracking-tight leading-tight">
+              <span className="inline-block text-smp-orange uppercase font-semibold tracking-[0.25em] text-xs sm:text-sm">
+                {t("home_about.title")}
+              </span>
+              <h2 className="text-3xl sm:text-4xl lg:text-[60px] font-semibold text-foreground tracking-tight leading-tight">
                 Sinergi Mandiri Perkasa
-              </h1>
+              </h2>
 
               <div className="text-sm sm:text-base md:text-lg text-smp-muted leading-relaxed text-justify [text-align-last:start] space-y-3">
                 {t
@@ -138,7 +134,7 @@ export default function Home() {
               <div className="pt-2 sm:pt-4">
                 <Link
                   href="/tentang-kami/profil-perusahaan"
-                  className="inline-flex items-center gap-3 border border-smp-blue text-smp-blue font-medium px-7 py-3 sm:px-8 sm:py-3.5 rounded-full transition-all duration-300 hover:bg-smp-blue hover:text-white shadow-sm hover:shadow-md group"
+                  className="inline-flex items-center gap-3 border border-smp-blue text-smp-blue font-semibold px-7 py-3 sm:px-8 sm:py-3.5 rounded-full transition-all duration-300 hover:bg-smp-blue hover:text-white shadow-sm hover:shadow-md group"
                 >
                   <span>{t("home_about.cta")}</span>
                   <IoArrowForward
@@ -163,7 +159,7 @@ export default function Home() {
                   aria-hidden="true"
                 />
                 <Image
-                  src="/images/ps-home.png"
+                  src="/images/ps-home.webp"
                   width={900}
                   height={1150}
                   priority
@@ -217,7 +213,7 @@ export default function Home() {
         className="relative isolate overflow-hidden px-4 py-16 sm:py-20 lg:py-24"
       >
         <Image
-          src="/carousel/background-features.png"
+          src="/carousel/background-features.webp"
           width={900}
           height={700}
           quality={70}
@@ -236,7 +232,7 @@ export default function Home() {
             viewport={{ once: true, margin: "-60px" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
           >
-            <span className="text-smp-orange uppercase font-medium tracking-[0.25em] text-xs sm:text-sm">
+            <span className="inline-block text-smp-orange uppercase font-semibold tracking-[0.25em] text-xs sm:text-sm">
               {t("home_features.desc")}
             </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-white leading-tight tracking-tight">
@@ -297,7 +293,7 @@ export default function Home() {
               viewport={{ once: true }}
               className="max-w-2xl"
             >
-              <span className="text-smp-orange uppercase font-medium tracking-[0.25em] text-xs sm:text-sm block mb-3">
+              <span className="text-smp-orange uppercase font-semibold tracking-[0.25em] text-xs sm:text-sm block mb-3">
                 {t("home_product.tag")}
               </span>
               <h2 className="text-3xl sm:text-4xl md:text-[60px] font-semibold text-foreground tracking-tight leading-snug mb-3">
@@ -314,7 +310,7 @@ export default function Home() {
             >
               <Link
                 href="/produk"
-                className="inline-flex items-center gap-2 text-foreground font-medium hover:text-smp-blue transition-colors duration-300 group"
+                className="inline-flex items-center gap-2 text-foreground font-semibold hover:text-smp-blue transition-colors duration-300 group"
               >
                 {t("home_product.cta")}
                 <IoArrowForward className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -337,7 +333,7 @@ export default function Home() {
                   aria-hidden="true"
                 />
                 <Image
-                  src="/images/cs-home-01.png"
+                  src="/images/cs-home-01.webp"
                   width={900}
                   height={1150}
                   quality={70}
@@ -414,14 +410,14 @@ export default function Home() {
             </m.div>
             {/* Kolom Kiri: Header FAQ */}
             <m.div
-              className="order-1 lg:order-1 lg:col-span-5"
+              className="order-1 lg:order-1 lg:col-span-5 space-y-6"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
             >
               <div className="sticky top-32">
-                <span className="text-smp-orange uppercase font-medium tracking-[0.25em] text-xs sm:text-sm block  mb-3">
+                <span className="block mb-3 text-smp-orange uppercase font-medium tracking-[0.25em] text-xs sm:text-sm">
                   {t("home_FAQ.tag")}
                 </span>
                 <h2 className="text-3xl sm:text-4xl font-semibold text-foreground tracking-tight mb-6 leading-tight">
@@ -434,7 +430,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
                     href="/kontak"
-                    className="inline-flex justify-center items-center gap-2 bg-smp-blue text-white font-medium px-7 py-3 rounded-full transition-all duration-300 hover:bg-foreground hover:shadow-lg"
+                    className="inline-flex justify-center items-center gap-2 bg-smp-blue text-white font-light px-7 py-3 rounded-full transition-all duration-300 hover:bg-foreground hover:shadow-lg"
                   >
                     {t("home_FAQ.cta")}
                   </Link>

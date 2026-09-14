@@ -22,7 +22,7 @@ const truncateText = (text: string, maxLength: number) => {
 export default function PageBreadcrumb({
   title,
   items,
-  backgroundImage = "/images/proyek-01.png",
+  backgroundImage = "/carousel/proyek-01.webp",
   maxLabelLength = 15,
 }: PageBreadcrumbProps) {
   return (

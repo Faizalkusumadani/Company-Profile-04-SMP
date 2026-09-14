@@ -121,6 +121,21 @@ export const activitiesData: ActivityStatic[] = [
     ],
     isNew: true,
   },
+  {
+    id: "8",
+    slug: "goes-to-korea",
+    image: "/images/ruang-in/kegiatan/Goes-to-Korea/1.webp",
+    contentKey: "Korea_2026",
+    updatedAt: "2026-08-22",
+    images: [
+      "/images/ruang-in/kegiatan/Goes-to-Korea/1.webp",
+      "/images/ruang-in/kegiatan/Goes-to-Korea/2.webp",
+      "/images/ruang-in/kegiatan/Goes-to-Korea/3.webp",
+      "/images/ruang-in/kegiatan/Goes-to-Korea/4.webp",
+      "/images/ruang-in/kegiatan/Goes-to-Korea/5.webp",
+    ],
+    isNew: true,
+  },
 ];
 
 // ── Helpers ────────────────────────────────────────────────────

@@ -133,7 +133,6 @@ export async function generateMetadata({
     },
 
     manifest: "/manifest.webmanifest",
-
     icons: {
       icon: [
         { url: "/logo/favicon.ico", sizes: "any" },

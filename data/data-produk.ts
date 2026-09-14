@@ -1,7 +1,6 @@
 // ─── Import data varian per produk ─────────────────────────────────────────────
 import MortindoVariants from "./mortindo";
 import SemenmerahputihVariants from "./semenmerahputih";
-import DrymixVariants from "./drymix";
 import ZiegelVariants from "./ziegel";
 import M1Variants from "./m1";
 import WavinVariants from "./wavin";
@@ -107,31 +106,6 @@ const produkDetailList: Product[] = [
   },
   {
     id: 3,
-    name: "Drymix",
-    slug: "drymix",
-    image: "/images/produk/Drymix.png",
-    gambarUtama: "/images/produk/Drymix.png",
-    namaBrand: "Drymix",
-    logoSrc: "/images/produk/A/DR/logo-drymix.png",
-    descKey: "drymix_desc",
-    featuresKeys: [
-      "drymix_features_1",
-      "drymix_features_2",
-      "drymix_features_3",
-      "drymix_features_4",
-      "drymix_features_5",
-      "drymix_features_6",
-    ],
-    category: "building",
-    rating: 5,
-    reviews: 236,
-    discount: "",
-    itemsBadge: "5 Items",
-    href: "/produk/drymix",
-    variants: DrymixVariants,
-  },
-  {
-    id: 4,
     name: "Wavin",
     slug: "wavin",
     price: 129900,
@@ -157,7 +131,7 @@ const produkDetailList: Product[] = [
     variants: WavinVariants,
   },
   {
-    id: 5,
+    id: 4,
     name: "Ziegel",
     slug: "ziegel",
     image: "/images/produk/Ziegel.png",
@@ -181,7 +155,7 @@ const produkDetailList: Product[] = [
     variants: ZiegelVariants,
   },
   {
-    id: 6,
+    id: 5,
     name: "M1 Waterproofing",
     slug: "m1",
     image: "/images/produk/M1.png",
@@ -204,7 +178,7 @@ const produkDetailList: Product[] = [
     variants: M1Variants,
   },
   {
-    id: 7,
+    id: 6,
     name: "Servvo",
     slug: "servvo",
     image: "/images/produk/Servvo.png",
@@ -228,7 +202,7 @@ const produkDetailList: Product[] = [
     variants: ServvoVariants,
   },
   {
-    id: 8,
+    id: 7,
     name: "Air",
     slug: "air",
     image: "/images/produk/AIRR.png",
@@ -251,7 +225,7 @@ const produkDetailList: Product[] = [
     variants: AirVariants,
   },
   {
-    id: 9,
+    id: 8,
     name: "Aer",
     slug: "aer",
     image: "/images/produk/AERR.png",
@@ -274,7 +248,7 @@ const produkDetailList: Product[] = [
     variants: AerVariants,
   },
   {
-    id: 10,
+    id: 9,
     name: "Ava",
     slug: "ava",
     image: "/images/produk/AVAA.png",

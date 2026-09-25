@@ -92,9 +92,11 @@ export async function generateMetadata({
     },
 
     // Ganti dengan kode verifikasi asli dari Google Search Console / Bing Webmaster
-    verification: {
-      google: "NeEe-TfVPT8fXlnDzmiHGryE4FryGpUmzGDgtrvltyA",
-    },
+    ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && {
+      verification: {
+        google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+      },
+    }),
 
     openGraph: {
       type: "website",

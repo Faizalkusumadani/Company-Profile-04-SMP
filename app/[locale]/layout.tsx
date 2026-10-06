@@ -1,9 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
-import { notFound } from "next/navigation";
 import { routing, type Locale } from "@/i18n/routing";
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages, setRequestLocale } from "next-intl/server";
+import { getLocale, getMessages } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Pageloader from "@/components/Pageloader";
@@ -19,7 +18,7 @@ const poppins = Poppins({
 
 // ─── Site Config ──────────────────────────────────────────────────────────────
 const siteConfig = {
-  url: "https://sinergimandiriperkasa.co.id/",
+  url: "https://sinergimandiriperkasa.co.id",
   name: "Sinergi Mandiri Perkasa",
   shortName: "Sinergi Mandiri Perkasa",
   description:
@@ -28,12 +27,12 @@ const siteConfig = {
   themeColor: "#ffffff",
 } as const;
 
-// ─── Static Params (wajib untuk static generation per locale) ────────────────
+// ─── Static Params (tetap wajib untuk static generation per locale) ──────────
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
-// ─── Viewport (wajib dipisah dari metadata di Next.js 14+) ──────────────────
+// ─── Viewport (dipisah dari metadata sejak Next.js 14) ───────────────────────
 export function generateViewport(): Viewport {
   return {
     width: "device-width",
@@ -43,18 +42,14 @@ export function generateViewport(): Viewport {
 }
 
 // ─── Metadata ─────────────────────────────────────────────────────────────────
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: Locale }>;
-}): Promise<Metadata> {
-  const { locale } = await params;
+export async function generateMetadata(): Promise<Metadata> {
+  const locale = (await getLocale()) as Locale;
 
   return {
     metadataBase: new URL(siteConfig.url),
 
     title: {
-      default: `${siteConfig.name} | Distributor Bahan Bangunan untuk kebutuhan proyek di wilayah Jabodetabek `,
+      default: `${siteConfig.name} | Distributor Bahan Bangunan untuk kebutuhan proyek di wilayah Jabodetabek`,
       template: `${siteConfig.name} | %s`,
     },
 
@@ -91,7 +86,7 @@ export async function generateMetadata({
       },
     },
 
-    // Ganti dengan kode verifikasi asli dari Google Search Console / Bing Webmaster
+    // Kode verifikasi Google Search Console (opsional, dari env)
     ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && {
       verification: {
         google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
@@ -102,7 +97,7 @@ export async function generateMetadata({
       type: "website",
       locale: locale === "id" ? "id_ID" : "en_US",
       alternateLocale: locale === "id" ? ["en_US"] : ["id_ID"],
-      url: `${siteConfig.url}${locale}`,
+      url: `${siteConfig.url}/${locale}`,
       siteName: siteConfig.name,
       title: `${siteConfig.name} | Distributor Bahan Bangunan untuk kebutuhan proyek di wilayah Jabodetabek`,
       description: siteConfig.description,
@@ -125,12 +120,12 @@ export async function generateMetadata({
     },
 
     alternates: {
-      canonical: `${siteConfig.url}${locale}`,
+      canonical: `${siteConfig.url}/${locale}`,
       languages: {
-        "id-ID": `${siteConfig.url}id`,
-        "en-US": `${siteConfig.url}en`,
+        "id-ID": `${siteConfig.url}/id`,
+        "en-US": `${siteConfig.url}/en`,
         // fallback untuk locale yang tidak match id/en
-        "x-default": `${siteConfig.url}id`,
+        "x-default": `${siteConfig.url}/id`,
       },
     },
 
@@ -154,27 +149,18 @@ export async function generateMetadata({
 // ─── Layout ───────────────────────────────────────────────────────────────────
 export default async function LocaleLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  // Validasi locale (404 untuk /fr/... dsb.) sudah ditangani di i18n/request.ts
+  const locale = (await getLocale()) as Locale;
 
-  // Guard: kalau locale di URL tidak terdaftar (mis. /fr/...), 404
-  if (!routing.locales.includes(locale as Locale)) {
-    notFound();
-  }
-
-  // Wajib dipanggil supaya static rendering per-locale bekerja dengan benar
-  setRequestLocale(locale);
-
-  // Dynamic Schema JSON-LD per Locale — tetap di layout karena ini
+  // Dynamic Schema JSON-LD per Locale
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "@id": `${siteConfig.url}/#organization`,
-    description: `${siteConfig.description}`,
+    description: siteConfig.description,
     name: siteConfig.name,
     alternateName: siteConfig.shortName,
     url: `${siteConfig.url}/${locale}`,
@@ -196,7 +182,7 @@ export default async function LocaleLayout({
       latitude: -6.183925463337667,
       longitude: 106.69935959559166,
     },
-    // Diperluas sesuai cakupan bisnis (Jabodetabek), bukan cuma Banten
+    // Sesuai cakupan bisnis (Jabodetabek), bukan cuma Banten
     areaServed: [
       { "@type": "AdministrativeArea", name: "DKI Jakarta" },
       { "@type": "AdministrativeArea", name: "Banten" },
@@ -214,6 +200,7 @@ export default async function LocaleLayout({
   };
 
   const messages = await getMessages();
+
   return (
     <html lang={locale} className={`${poppins.variable} h-full antialiased`}>
       <head>
@@ -225,7 +212,7 @@ export default async function LocaleLayout({
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Pageloader />
-          <Navbar locale={locale as Locale} />
+          <Navbar locale={locale} />
           <main className="bg-background scroll-smooth">{children}</main>
           <Footer />
           <CookieConsent gaId={process.env.NEXT_PUBLIC_GA_ID} />
